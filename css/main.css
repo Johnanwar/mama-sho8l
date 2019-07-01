@@ -354,6 +354,97 @@ color: #c95195
 }
 
 /* end addvertsment */
+/* product section */
+
+.first-product {
+  border: 1px solid #000;
+  position: relative;
+  padding: 5px ;
+  background-color: #eee ;
+  z-index: 44;
+  /* height: 200px; */
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 2px 2px 3px #c95195,
+  -2px -2px 3px #c95195;
+  width: 60%;
+}
+.first-product img{
+  background-color: #c95195 !important;
+  position: absolute;
+  width: 50% !important;
+  height: 100px;
+  top: -50px;
+  margin-left: 39%;
+  right: 25%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: mymove 1s linear infinite;
+  -webkit-animation: mymove 1s linear infinite;
+}
+/* .first-product img:hover{
+  transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+} */
+
+
+@keyframes mymove
+{
+  0%,100% {
+       transform:rotate(0);
+       -webkit-transform:rotate(0);
+       -moz-transform:rotate(0);
+       -ms-transform:rotate(0);
+       -o-transform:rotate(0);
+}
+
+  25% {
+    transform: rotate(-30deg)
+  }
+
+  75% {
+    transform: rotate(30deg)
+  }
+}
+
+.first-product h5{
+  font-size: 28px
+}
+.producct-content .btn{
+  background-color: #c95195;
+  width: 80%;
+  color: #fff; 
+}
+.producct-content .btn:hover{
+  background-color: #fff;
+  color: #c95195; 
+}
+ .price{
+ font-size: 35px;
+ color: #c95195;
+ font-weight: bold;
+}
+.old-price{
+  margin-left: 10px;
+  font-size: 32px;
+  font-weight: 400;
+  font-style: italic;
+  color: #c0c1cd;
+  text-decoration: line-through;
+ }
+ .stars i{
+   color: #f3a90b
+ }
+
 /* staaaaaaaaaaaaaaart foooter */
 
 

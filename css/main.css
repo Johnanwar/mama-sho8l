@@ -190,6 +190,14 @@ color: #383749;
   height: 85px;
   z-index: 9999999;
 }
+.my-fixed-nav{
+   position: fixed;
+  top: 0;
+  right: 0;
+  left: 0; 
+  height: 85px;
+background-color: #64266c;
+}
 
 .fixed-nav a {
   color: #fff !important;
@@ -728,6 +736,9 @@ color: #383749;
   .nav-logo img {
     width: 113px!important;
     height: 73px;
+}
+.onlymob{
+  display: none;
 }
 	
 	.header-bar-search, .header-bar-menu {

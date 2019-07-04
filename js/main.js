@@ -14,28 +14,6 @@
 // end nav baaaaaar
 
 
-    /* owl carowsl  */
-    $('.owl-carousel').owlCarousel({
-      items:8,
-    loop:true,
-    autoplay:true,
-      autoplayTimeout:3000,
-      autoplayHoverPause:true,
-    margin:10,
-      rtl:true,
-      
-      responsive:{
-          0:{
-              items:2
-          },
-          600:{
-              items:3
-          },
-          1000:{
-              items:3
-          }
-      }
-  });
   //  scroll button
 
   $(".sccroll-top i").click (function() {
@@ -45,4 +23,38 @@
   if ($(window). scrollTop () >= 600){$(".sccroll-top i").fadeIn(400)}
   else ($(".sccroll-top i").fadeOut(400) )
   
-                              });
+     });
+     var signInPopup =document.querySelector(".popup");
+     var signUpPopup =document.querySelector(".popup2");
+     var signInBottun = document.querySelectorAll("#signIn");
+     var signUpBottun = document.querySelectorAll("#signUp");
+     
+     signInPopup.addEventListener('click', function() {
+        this.style.display = "none";
+     })
+     document.querySelector(".login-popup").addEventListener('click',(el)=>{
+      el.stopPropagation()
+    })
+
+     signUpPopup.addEventListener('click', function() {
+      this.style.display = "none";
+      })
+   document.querySelector(".login-popup2").addEventListener('click',(el)=>{
+    el.stopPropagation()
+  })
+
+     signInBottun.forEach((el)=>{
+       el.addEventListener("click",(e)=>{
+         e.preventDefault();
+        signInPopup.style.display = "block"
+        console.log(signInPopup)
+       })
+     })
+
+     signUpBottun.forEach((el)=>{
+      el.addEventListener("click",(e)=>{
+        e.preventDefault();
+        signUpPopup.style.display = "block"
+       console.log(signInPopup)
+      })
+    })

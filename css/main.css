@@ -593,7 +593,8 @@ background-color: #64266c;
 	margin: auto;
 }
 .contact-container{
-	background-color: #f7f7f7
+  background-color: #64266c;
+  color: #fff
 }
 .footer-form .btn{
 	background-color: #c95195!important;

@@ -72,7 +72,7 @@
 
     
                 </li>
-                              <!-- my  cart -->
+  <!-- my  cart -->
                <div id="cart" class="cart-popup ">
             <!-- cart item -->
               <span id="cart-popup-close" >
@@ -180,6 +180,7 @@
     </section>
 
         <!-- end about section -->
+
 
     <!-- start product section -->
     <section id="products">
@@ -461,7 +462,6 @@
                               </div>
                   
                             </div> 
-
                             <div class="col-md-4 w-100 my-2">
                                 <div class="all-card">
                                   <img class="img-fluid" src="./images/doctor.jpg">
@@ -504,11 +504,102 @@
                                   </div>
                       
                                 </div>
+                                <button class="article-btn mx-auto my-3"><a href="">عرض جميع المقالات</a></button>
           </div>
          </div>
       </section>
 
       <!-- /* end article section */ -->
+
+      
+        <!-- fixed cart menu -->
+        <div class="fixedcart">
+            <!-- my  cart -->
+                <!-- cart item -->
+                  <span id="poup-cart-icon" >
+                    <i class="fas fa-shopping-cart"></i>
+                 </span>
+                <div class="cart-item d-flex justify-content-between mt-3">
+                    <img src="images/product-1.png" class="img-fluid rounded-circle" id="item-img" alt="">
+                    <div class="item-text">
+                      <p id="cart-item-title" class=" mb-0">  الاجنده الجديده</p>
+                      <span id="cart-item-price" class="cart-item-price" class="mb-0">50</span>
+                    </div>
+                    <a href="#" id='cart-item-remove' class="cart-item-remove">
+                      <i class="fas fa-trash"></i>
+                    </a>
+                  </div>
+                        <!-- cart item -->
+                <div class="cart-item d-flex justify-content-between mt-3">
+                    <img src="images/product-1.png" class="img-fluid rounded-circle" id="item-img" alt="">
+                    <div class="item-text">
+                      <p id="cart-item-title" class=" mb-0">  الاجنده الجديده</p>
+                      <span id="cart-item-price" class="cart-item-price" class="mb-0">50</span>
+                    </div>
+                    <a href="#" id='cart-item-remove' class="cart-item-remove">
+                      <i class="fas fa-trash"></i>
+                    </a>
+                  </div>
+                        <!-- cart item -->
+                <div class="cart-item d-flex justify-content-between mt-3">
+                    <img src="images/product-1.png" class="img-fluid rounded-circle" id="item-img" alt="">
+                    <div class="item-text">
+                      <p id="cart-item-title" class="f mb-0">  الاجنده الجديده</p>
+                      <span id="cart-item-price" class="cart-item-price text-center">50</span>
+                    </div>
+                    <a href="#" id='cart-item-remove' class="cart-item-remove">
+                      <i class="fas fa-trash"></i>
+                    </a>
+                </div>
+                              <!--end of  cart item -->
+              <!-- cart total -->
+              <div class="cart-total-container d-flex justify-content-around text-capitalize mt-2">
+                  <h5>الاجمالي</h5>
+                  <h5> <strong id="cart-total" class="font-weight-bold">150</strong> </h5>
+                </div>
+                <!--end cart total -->
+                <!-- cart buttons -->
+                <div class="cart-buttons-container my-3 d-flex justify-content-between justify-content-center">
+                  <a href="#" id="clear-cart" class="btn btn-outline-secondary  ">ازاله العربه</a>
+                  <a href="#" class="btn btn-outline-secondary ">شراء</a>
+                </div>
+                <!--end of  cart buttons -->
+      <!-- end my  cart -->
+
+        </div>
+        <!-- fixed cart menu -->
+
+        <!-- start fixed contact form -->
+        <div class="fixed-contact-form ">
+            <div class=" footer-form px-4 my-2">
+        
+                <form>
+                  <div class="form-group">
+                    <input required type="name" class="form-control" id="exampleFormControlInput1" placeholder="الاسم">
+                  </div>
+                              
+                  <div class="form-group">
+                    <input required type="Phone" class="form-control" id="exampleFormControlInput1" placeholder="الموبايل">
+                  </div>
+                              
+                  <div class="form-group">
+                    <input required type="email" class="form-control" id="exampleFormControlInput1" placeholder="الايميل">
+                  </div>
+        
+                  <div class="form-group">
+                    <textarea required class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="اكتب رسالتك"></textarea>
+                  </div>
+                  <button type="submit" class="btn  btn-block "> ارسلي رسالتك <i class="fas fa-share-square"></i></button>
+                </form>
+        
+                </div>
+
+        </div>
+        <div class="contact-fixed-icon">
+            <i class="far fa-envelope"></i>
+        </div>
+
+        <!-- end fixed contact form -->
 
 <!-- ------------------------/* stat footer */*------------>
 <footer class="contact-container">
@@ -577,7 +668,7 @@
           <div class="form-group">
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="اكتب رسالتك"></textarea>
           </div>
-          <button type="button" class="btn  btn-block "><i class="fas fa-share-square"></i> ارسلي رسالتك</button>
+          <button type="button" class="btn  btn-block "> ارسلي رسالتك <i class="fas fa-share-square"></i></button>
         </form>
 
         </div>

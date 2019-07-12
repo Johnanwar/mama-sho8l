@@ -1,67 +1,301 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Mama Fe El Shoghl</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/poup.css" />
+    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap&subset=arabic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lateef&display=swap" rel="stylesheet">
+
+
 </head>
-<style>
-    .hide-text p{
-        display: none;
-        width: 100%;
-        background-color: #333;
-        color: #09c;
-        height: 100%;
-    }
-    .first-child p{
-        width: 100%;
-        background-color: #333;
-        color: #09c;
-        height: 100%;
-    }
-
-</style>
 <body>
-    <div class="parent">
+    <div class="home">
+      <div class="overlay2">
+<!-- staaaaaaaaaaaaaart naaaaaaaaaaaaav baaaaaaaaaaaaaar -->
+        <nav class="big-nav">
+            <div class="hamburger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
 
-        <div class="first-child hide-text"> <button id="btn">one</button>    
-            <p id="text"> text belong tow div one</p>
+            <div class="nav-logo">
+                <a href="#"><img class="logo img-responsive" src="./images/logo.png" alt=" logo"></a>
+            </div>
+         
+            <ul class="big-nav-links">
+              <li><a href="#">الرئيسيه </a></li>
+
+
+            <li class="nav-item dropdown producrt-dropdown list-unstyled ">
+                <a class="nav-link  dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    منتجاتنا
+                </a>
+                <div class="dropdown-menu second-color " aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item " href="#"> <i class=" mr-3 fas fa-female"></i>   سيدات</a>
+                    <a class="dropdown-item" href="#"> <i class="mr-3 fas fa-child"></i> اطفال  
+                    </a>
+                </div>
+            </li>
+
+
+
+              <li><a href="#">مقالات</a></li>
+              <li><a href="#"><img class="profile img-responsive" src="./images/face.jpg" alt=" profile"></a></li>
+
+              <li class="nav-item dropdown notfication-dropdown list-unstyled ">
+                <a class="nav-link  dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="far fa-bell"></i></a>
+                </a>
+                <div class="dropdown-menu second-color " aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item " href="#"> Notficaaaaaaaaaaaaaaaation   </a>
+                    <a class="dropdown-item" href="#">  Notficaaaaaaaaaaaaaaaation   </a>
+                    <a class="dropdown-item" href="#">  Notficaaaaaaaaaaaaaaaation   </a>
+                    <a class="dropdown-item" href="#">  Notficaaaaaaaaaaaaaaaation   </a>
+                </div>
+                <span  id="notfi"> 0 </span>
+            </li>
+
+              <li id="nav-cart" class="cart-header ">
+                <p id="nav-cart" class="test-nav mb-0">
+                  <span class="cart-info_icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span> 
+                  <span id="item-count">3 </span> منتجات -
+                  <span class="item-total">500</span>
+                </p>
+
+    
+                </li>
+  <!-- my  cart -->
+               <div id="cart" class="cart-popup ">
+            <!-- cart item -->
+              <span id="cart-popup-close" >
+              <i class="fas fa-times-circle"></i>
+            </span>
+            <div class="cart-item d-flex justify-content-between mt-3">
+                <img src="images/product-1.png" class="img-fluid rounded-circle" id="item-img" alt="">
+                <div class="item-text">
+                  <p id="cart-item-title" class=" mb-0">  الاجنده الجديده</p>
+                  <span id="cart-item-price" class="cart-item-price" class="mb-0">50</span>
+                </div>
+                <a href="#" id='cart-item-remove' class="cart-item-remove">
+                  <i class="fas fa-trash"></i>
+                </a>
+              </div>
+                    <!-- cart item -->
+            <div class="cart-item d-flex justify-content-between mt-3">
+                <img src="images/product-1.png" class="img-fluid rounded-circle" id="item-img" alt="">
+                <div class="item-text">
+                  <p id="cart-item-title" class=" mb-0">  الاجنده الجديده</p>
+                  <span id="cart-item-price" class="cart-item-price" class="mb-0">50</span>
+                </div>
+                <a href="#" id='cart-item-remove' class="cart-item-remove">
+                  <i class="fas fa-trash"></i>
+                </a>
+              </div>
+                    <!-- cart item -->
+            <div class="cart-item d-flex justify-content-between mt-3">
+                <img src="images/product-1.png" class="img-fluid rounded-circle" id="item-img" alt="">
+                <div class="item-text">
+                  <p id="cart-item-title" class="f mb-0">  الاجنده الجديده</p>
+                  <span id="cart-item-price" class="cart-item-price text-center">50</span>
+                </div>
+                <a href="#" id='cart-item-remove' class="cart-item-remove">
+                  <i class="fas fa-trash"></i>
+                </a>
+            </div>
+                          <!--end of  cart item -->
+          <!-- cart total -->
+          <div class="cart-total-container d-flex justify-content-around text-capitalize mt-2">
+              <h5>الاجمالي</h5>
+              <h5> <strong id="cart-total" class="font-weight-bold">150</strong> </h5>
+            </div>
+            <!--end cart total -->
+            <!-- cart buttons -->
+            <div class="cart-buttons-container my-3 d-flex justify-content-between justify-content-center">
+              <a href="#" id="clear-cart" class="btn btn-outline-secondary  ">ازاله العربه</a>
+              <a href="#" class="btn btn-outline-secondary ">شراء</a>
+            </div>
+            <!--end of  cart buttons -->
+              </div>
+  <!-- end my  cart -->
+      
+            </ul>
+          </nav>
+ <!--eeeeeeeeeend naaaaaaaaaaaaav baaaaaaaaaaaaaar -->
+           </div>
+          </div>        
+    <!-- end home  -->
+    
+    <!-- start article section -->
+    <section id="articl">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 ">
+                    <div class="right-side my-4">
+                        <br>
+                        <input type="search" class="form-control w-75 mb-3 mx-auto" placeholder="ابحثي هنا ">                        
+                        <div class="right-side-header my-2 px-2">
+                             <h5>ماما في المطبخ</h5>
+                             <ul class="ml-4">
+                                    <li><a href="#">كيف تفعل اليسنس</a></li>
+                                    <li><a href="#">كيف تفعل اليسنس</a></li>
+                                    <li><a href="#">كيف تفعل اليسنس</a></li>
+                                    <li><a href="#">كيف تفعل اليسنس</a></li>
+                             </ul>
+                         </div>
+                         <div class="right-side-header my-2 px-2">
+                            <h5>ماما في المطبخ</h5>
+                            <ul class="ml-4">
+                                    <li><a href="#">كيف تفعل اليسنس</a></li>
+                                    <li><a href="#">كيف تفعل اليسنس</a></li>
+                                    <li><a href="#">كيف تفعل اليسنس</a></li>
+                                    <li><a href="#">كيف تفعل اليسنس</a></li>
+                            </ul>
+                        </div>
+                        <div class="right-side-header my-2 px-2">
+                            <h5>ماما في المطبخ</h5>
+                            <ul class="ml-4">
+                                <li><a href="#">كيف تفعل اليسنس</a></li>
+                                <li><a href="#">كيف تفعل اليسنس</a></li>
+                                <li><a href="#">كيف تفعل اليسنس</a></li>
+                                <li><a href="#">كيف تفعل اليسنس</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="article-content my-4">
+                            <img class="img-fluid" src="./images/pen.jpg">
+
+                            <div class="card-content p-3">
+                                    <p><i class="far fa-clock mr-2"> </i> 1  يوليو 2019  <i class="fas fa-user mx-2">
+                                    </i> بواسطه <a class="second-color" href="">الادمن</a></p>
+                                    <h5 class="text-center font-weight-bold second-color"> العنوان</h5>
+                                    <p>- سواء كنتي أم عاملة أو غير عامله ، فوجود جدول هيساعدك انتي و ولادك 
+                                        انكوا تعرفوا تقسموا المذاكرة علي الأيام و الوقت . بصفة عامة الأطفال....
+                                        - سواء كنتي أم عاملة أو غير عامله ، فوجود جدول هيساعدك انتي و ولادك 
+                                        انكوا تعرفوا تقسموا المذاكرة علي الأيام و الوقت . بصفة عامة الأطفال....- سواء كنتي أم عاملة أو غير عامله ، فوجود جدول هيساعدك انتي و ولادك 
+                                        انكوا تعرفوا تقسموا المذاكرة علي الأيام و الوقت . بصفة عامة الأطفال....- سواء كنتي أم عاملة أو غير عامله ، فوجود جدول هيساعدك انتي و ولادك 
+                                        انكوا تعرفوا تقسموا المذاكرة علي الأيام و الوقت . بصفة عامة الأطفال....- سواء كنتي أم عاملة أو غير عامله ، فوجود جدول هيساعدك انتي و ولادك 
+                                        انكوا تعرفوا تقسموا المذاكرة علي الأيام و الوقت . بصفة عامة الأطفال....- سواء كنتي أم عاملة أو غير عامله ، فوجود جدول هيساعدك انتي و ولادك 
+                                        انكوا تعرفوا تقسموا المذاكرة علي الأيام و الوقت . بصفة عامة الأطفال....- سواء كنتي أم عاملة أو غير عامله ، فوجود جدول هيساعدك انتي و ولادك 
+                                        انكوا تعرفوا تقسموا المذاكرة علي الأيام و الوقت . بصفة عامة الأطفال....
+                                    </p>
+                              
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+<!-- ------------------------/* stat footer */*------------>
+<footer class="contact-container">
+    <div class="container">
+      <div class="row mt-4  contact-doupple">
+      
+        <div class="col-md-4 footer-about my-2">
+        
+          <h5 class="mb-5">من نحن</h5>	
+          <div>
+            <p> <span class="font-color2">ماما في الشغل </span> هي شركه متخصصه في <br>---------------------
+              ----------------------- اكلوا الخضار واللحمة والفراخ أو السمك اللى بيبقوا فى البيت. طيب ايه الحل؟ حقترح عليكم يا أمهات أساليب جديدة حتساعدكم فى  </p>
+          </div>
+
+        </div> 
+        <div class="col-md-4 footer-contact my-2">
+          <h5 class="mb-5">تواصل معنا </h5>
+
+          <div class="contact-content row">
+            <div class="col-md-2 mt-1 col-2">
+              <span class="contact-i"><i class="fas fa-map-marker-alt"></i></span>
+            </div>
+
+            <div class="col-md-10 contact-text col-10" >
+              <p> 37  مدينه نصر</p>
+              </div>
+          </div>
+          
+            <div class="contact-content row">
+              <div class="col-md-2 col-2 mt-1">
+              <span class="contact-i"><i class="fa fa-phone"></i></span>
+            </div>
+
+            <div class="col-md-10 contact-text  col-10" >
+              <p> +202 26903117  /+02 28943554  </p>
+              </div>
+        </div>
+          
+          
+        <div class="contact-content row">
+          <div class="col-md-2 col-2 mt-1">
+          <span class=" contact-i"><i class=" far   fa-envelope"></i></span>
+        </div>
+          <div class="col-md-10 col-10 contact-text" >
+          <a href="#"> mailto:info@de-tc.com </a>
+          </div>
         </div>
 
-        <div class="first-child hide-text"> <button id="btn">two</button> 
-          <p  id="text"> text belong tow div two</p>
-        </div>
 
-        <div class="first-child hide-text"> <button id="btn">thre</button>  
-            <p  id="text"> text belong tow div three</p>  
         </div>
+        <div class="col-md-4 footer-form my-2">
+        
+        <form>
+          <div class="form-group">
+            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="الاسم">
+          </div>
+                      
+          <div class="form-group">
+            <input type="Phone" class="form-control" id="exampleFormControlInput1" placeholder="الموبايل">
+          </div>
+                      
+          <div class="form-group">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="الايميل">
+          </div>
+
+          <div class="form-group">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="اكتب رسالتك"></textarea>
+          </div>
+          <button type="button" class="btn  btn-block "> ارسلي رسالتك <i class="fas fa-share-square"></i></button>
+        </form>
+
+        </div>
+  
+   </div>  
+</div>
+</footer>
+
+
+<footer class="last-section ">
+<div class="container py-1 d-flex justify-content-between">  
+
+    <div class=" social py-3 text-center">
+      <span><a href="#"> <i class="fab fa-facebook-square"></i> </a></span>
+      <span><a href="#"> <i class="fab fa-twitter-square"></i> </a></span>
+      <span> <a href="#"> <i class="fab fa-instagram"></i> </a></span>
+      <span> <a href="#"> <i class="fab fa-google-plus-square"></i> </a></span>
+
     </div>
 
+  <div class="copyright py-3">
+    <p>جميع الحقوق محفوظه لشركه<a href=""> ماما في الشغل</a></p>
+  </div>
+</div>
+</footer> 
+
+<!-- end last seection -->
     <script src="js/jquery-3.3.1.min.js"></script>
-
-    <script>
-        // var btn = document.querySelectorAll('#btn')
-        // // var text = document.querySelectorAll('#text')
-        // btn.forEach((bt)=>{
-        //     bt.addEventListener('click', ()=>{
-        //         var x = $('bt').sibllings()
-        //         con
-            
-        //         bt.parentNode.classList.remove('hide-text')
-            
-        // })
-
-        // })
-            $('#btn').click( function(){
-                console.log("Gg")
-            })
-    
-
-      
-    
-    
-    </script>
-    
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -75,7 +75,7 @@
   //    popups();
 
 
-  // nav barr function in small screens
+  //start nav barr function in small screens
 
 function navbar(){
   const hamburger = document.querySelector(".hamburger");
@@ -90,8 +90,10 @@ function navbar(){
   });
 };
 navbar()
+  // enfd nav barr function in small screens
 
-  // nav barr function show product in nav baaaar
+
+  // staaaartnav barr function show product in nav baaaar
 
 function showCart(){
  const navCart = document.getElementById('nav-cart');
@@ -102,15 +104,13 @@ function showCart(){
  })
  removNavCart.addEventListener('click',(e)=> {
   cartPopup.classList.remove("show-cart");
- })
-
-  
- 
-}
-
+ });
+};
 showCart()
-              /*Counter*/
+  // end nav barr function show product in nav baaaar
 
+
+ /* start Counter*/
 function counter(){
               $(window).scroll(function(){
                 if($(window).scrollTop()>=$("#about").offset().top-200)
@@ -124,10 +124,46 @@ function counter(){
                         step: function(now){
                         $(this).text(Math.ceil(now))
                     }
-                })
-            })  
-                    } 
-            })    
+                });
+               });
+              } ;
+             }) ;   
+};
+counter();
+ /* end Counter*/
+
+//  start cart cartPopup
+function fixedCart(){
+  const icon = document.querySelector("#poup-cart-icon i");
+  const fixedPopup = document.querySelector(".fixedcart");
+  icon.addEventListener("click", ()=>{
+    fixedPopup.classList.toggle("changeRight");
+    if( fixedPopup.classList.contains("changeRight") ){
+      fixedPopup.style.right="0"
+    }else{
+      fixedPopup.style.right="-255px"
+    };
+  });
+};
+fixedCart();
+//  end cart cartPopup
+
+//  start  form contact popup;
+function fixedForm(){
+  const formIcon = document.querySelector(".contact-fixed-icon");
+  const formContainer = document.querySelector(".fixed-contact-form");
+  formIcon.addEventListener('click',()=> {
+    formContainer.classList.toggle('show-form')
+    if(formContainer.classList.contains('show-form')){
+      formIcon.innerHTML = `<i class="fas fa-times-circle"></i>`
+    }else{
+      formIcon.innerHTML = `<i class="far fa-envelope"></i>`
+    }
+  })
+
 }
-counter()
+fixedForm()
+
+//  end form contact popup;
+
 

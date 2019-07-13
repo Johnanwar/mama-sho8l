@@ -9,289 +9,675 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.css" />
     <link rel="stylesheet" href="css/swiper.min.css" />
-    <link rel="stylesheet" href="css/poup.css" />
-    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap&subset=arabic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lateef&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/main.css" />
 
 </head>
 <body>
-    <div class="home">
-      <div class="overlay2">
-<!-- staaaaaaaaaaaaaart naaaaaaaaaaaaav baaaaaaaaaaaaaar -->
-        <nav class="big-nav">
-            <div class="hamburger">
-              <div class="line"></div>
-              <div class="line"></div>
-              <div class="line"></div>
-            </div>
 
-            <div class="nav-logo">
-                <a href="#"><img class="logo img-responsive" src="./images/logo.png" alt=" logo"></a>
-            </div>
-         
-            <ul class="big-nav-links">
-              <li><a href="#">الرئيسيه </a></li>
+   <!-- start section above nav bar -->
+   <div class="top-header-bar">
+      <div class="container-fluid">
+      <div class="row">
+      <div class="col-12 col-lg-6 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+      <div class="header-bar-email d-flex align-items-center">
+      <a href="#">tuanna.design@gmail.com</a> <i class="fa fa-envelope"></i>
+      </div>
+      <div class="header-bar-text lg-flex align-items-center">
+      <p>001-1234-88888 <i class="fa fa-phone"></i></p>
+      </div>
+      </div>
+      <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+      <div class="header-bar-search">
+      <form class="flex align-items-stretch">
+      <input type="search" placeholder="بتدوري على ايه ">
+      <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button>
+      </form>
+      </div>
+      <div class="header-bar-menu">
+      <span class="flex justify-content-center align-items-center pl-md-4  py-2 pt-md-0 ">
+      <span><a id="signUp" href="#"> ضيفي حساب </a> / </span>
+      <span><a id="signIn" href="#">سجلي دخولك</a></span>
+      </span>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
 
-
-            <li class="nav-item dropdown producrt-dropdown list-unstyled ">
-                <a class="nav-link  dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    منتجاتنا
-                </a>
-                <div class="dropdown-menu second-color " aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item " href="#"> <i class=" mr-3 fas fa-female"></i>   سيدات</a>
-                    <a class="dropdown-item" href="#"> <i class="mr-3 fas fa-child"></i> اطفال  
-                    </a>
-                </div>
-            </li>
-
-
-
-              <li><a href="#">مقالات</a></li>
-              <li><a href="#"><img class="profile img-responsive" src="./images/face.jpg" alt=" profile"></a></li>
-
-              <li class="nav-item dropdown notfication-dropdown list-unstyled ">
-                <a class="nav-link  dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="far fa-bell"></i></a>
-                </a>
-                <div class="dropdown-menu second-color " aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item " href="#"> Notficaaaaaaaaaaaaaaaation   </a>
-                    <a class="dropdown-item" href="#">  Notficaaaaaaaaaaaaaaaation   </a>
-                    <a class="dropdown-item" href="#">  Notficaaaaaaaaaaaaaaaation   </a>
-                    <a class="dropdown-item" href="#">  Notficaaaaaaaaaaaaaaaation   </a>
-                </div>
-                <span  id="notfi"> 0 </span>
-            </li>
-
-              <li id="nav-cart" class="cart-header ">
-                <p id="nav-cart" class="test-nav mb-0">
-                  <span class="cart-info_icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span> 
-                  <span id="item-count">3 </span> منتجات -
-                  <span class="item-total">500</span>
-                </p>
-
-    
-                </li>
-  <!-- my  cart -->
-               <div id="cart" class="cart-popup ">
-            <!-- cart item -->
-              <span id="cart-popup-close" >
-              <i class="fas fa-times-circle"></i>
-            </span>
-            <div class="cart-item d-flex justify-content-between mt-3">
-                <img src="images/product-1.png" class="img-fluid rounded-circle" id="item-img" alt="">
-                <div class="item-text">
-                  <p id="cart-item-title" class=" mb-0">  الاجنده الجديده</p>
-                  <span id="cart-item-price" class="cart-item-price" class="mb-0">50</span>
-                </div>
-                <a href="#" id='cart-item-remove' class="cart-item-remove">
-                  <i class="fas fa-trash"></i>
-                </a>
-              </div>
-                    <!-- cart item -->
-            <div class="cart-item d-flex justify-content-between mt-3">
-                <img src="images/product-1.png" class="img-fluid rounded-circle" id="item-img" alt="">
-                <div class="item-text">
-                  <p id="cart-item-title" class=" mb-0">  الاجنده الجديده</p>
-                  <span id="cart-item-price" class="cart-item-price" class="mb-0">50</span>
-                </div>
-                <a href="#" id='cart-item-remove' class="cart-item-remove">
-                  <i class="fas fa-trash"></i>
-                </a>
-              </div>
-                    <!-- cart item -->
-            <div class="cart-item d-flex justify-content-between mt-3">
-                <img src="images/product-1.png" class="img-fluid rounded-circle" id="item-img" alt="">
-                <div class="item-text">
-                  <p id="cart-item-title" class="f mb-0">  الاجنده الجديده</p>
-                  <span id="cart-item-price" class="cart-item-price text-center">50</span>
-                </div>
-                <a href="#" id='cart-item-remove' class="cart-item-remove">
-                  <i class="fas fa-trash"></i>
-                </a>
-            </div>
-                          <!--end of  cart item -->
-          <!-- cart total -->
-          <div class="cart-total-container d-flex justify-content-around text-capitalize mt-2">
-              <h5>الاجمالي</h5>
-              <h5> <strong id="cart-total" class="font-weight-bold">150</strong> </h5>
-            </div>
-            <!--end cart total -->
-            <!-- cart buttons -->
-            <div class="cart-buttons-container my-3 d-flex justify-content-between justify-content-center">
-              <a href="#" id="clear-cart" class="btn btn-outline-secondary  ">ازاله العربه</a>
-              <a href="#" class="btn btn-outline-secondary ">شراء</a>
-            </div>
-            <!--end of  cart buttons -->
-              </div>
-  <!-- end my  cart -->
-      
-            </ul>
-          </nav>
- <!--eeeeeeeeeend naaaaaaaaaaaaav baaaaaaaaaaaaaar -->
-           </div>
-          </div>        
-    <!-- end home  -->
-    
-    <!-- start article section -->
-    <section id="articl">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 ">
-                    <div class="right-side my-4">
-                        <br>
-                        <input type="search" class="form-control w-75 mb-3 mx-auto" placeholder="ابحثي هنا ">                        
-                        <div class="right-side-header my-2 px-2">
-                             <h5>ماما في المطبخ</h5>
-                             <ul class="ml-4">
-                                    <li><a href="#">كيف تفعل اليسنس</a></li>
-                                    <li><a href="#">كيف تفعل اليسنس</a></li>
-                                    <li><a href="#">كيف تفعل اليسنس</a></li>
-                                    <li><a href="#">كيف تفعل اليسنس</a></li>
-                             </ul>
-                         </div>
-                         <div class="right-side-header my-2 px-2">
-                            <h5>ماما في المطبخ</h5>
-                            <ul class="ml-4">
-                                    <li><a href="#">كيف تفعل اليسنس</a></li>
-                                    <li><a href="#">كيف تفعل اليسنس</a></li>
-                                    <li><a href="#">كيف تفعل اليسنس</a></li>
-                                    <li><a href="#">كيف تفعل اليسنس</a></li>
-                            </ul>
-                        </div>
-                        <div class="right-side-header my-2 px-2">
-                            <h5>ماما في المطبخ</h5>
-                            <ul class="ml-4">
-                                <li><a href="#">كيف تفعل اليسنس</a></li>
-                                <li><a href="#">كيف تفعل اليسنس</a></li>
-                                <li><a href="#">كيف تفعل اليسنس</a></li>
-                                <li><a href="#">كيف تفعل اليسنس</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-9">
-                    <div class="article-content my-4">
-                            <img class="img-fluid" src="./images/pen.jpg">
-
-                            <div class="card-content p-3">
-                                    <p><i class="far fa-clock mr-2"> </i> 1  يوليو 2019  <i class="fas fa-user mx-2">
-                                    </i> بواسطه <a class="second-color" href="">الادمن</a></p>
-                                    <h5 class="text-center font-weight-bold second-color"> العنوان</h5>
-                                    <p>- سواء كنتي أم عاملة أو غير عامله ، فوجود جدول هيساعدك انتي و ولادك 
-                                        انكوا تعرفوا تقسموا المذاكرة علي الأيام و الوقت . بصفة عامة الأطفال....
-                                        - سواء كنتي أم عاملة أو غير عامله ، فوجود جدول هيساعدك انتي و ولادك 
-                                        انكوا تعرفوا تقسموا المذاكرة علي الأيام و الوقت . بصفة عامة الأطفال....- سواء كنتي أم عاملة أو غير عامله ، فوجود جدول هيساعدك انتي و ولادك 
-                                        انكوا تعرفوا تقسموا المذاكرة علي الأيام و الوقت . بصفة عامة الأطفال....- سواء كنتي أم عاملة أو غير عامله ، فوجود جدول هيساعدك انتي و ولادك 
-                                        انكوا تعرفوا تقسموا المذاكرة علي الأيام و الوقت . بصفة عامة الأطفال....- سواء كنتي أم عاملة أو غير عامله ، فوجود جدول هيساعدك انتي و ولادك 
-                                        انكوا تعرفوا تقسموا المذاكرة علي الأيام و الوقت . بصفة عامة الأطفال....- سواء كنتي أم عاملة أو غير عامله ، فوجود جدول هيساعدك انتي و ولادك 
-                                        انكوا تعرفوا تقسموا المذاكرة علي الأيام و الوقت . بصفة عامة الأطفال....- سواء كنتي أم عاملة أو غير عامله ، فوجود جدول هيساعدك انتي و ولادك 
-                                        انكوا تعرفوا تقسموا المذاكرة علي الأيام و الوقت . بصفة عامة الأطفال....
-                                    </p>
-                              
-                                </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
-<!-- ------------------------/* stat footer */*------------>
-<footer class="contact-container">
-    <div class="container">
-      <div class="row mt-4  contact-doupple">
-      
-        <div class="col-md-4 footer-about my-2">
-        
-          <h5 class="mb-5">من نحن</h5>	
-          <div>
-            <p> <span class="font-color2">ماما في الشغل </span> هي شركه متخصصه في <br>---------------------
-              ----------------------- اكلوا الخضار واللحمة والفراخ أو السمك اللى بيبقوا فى البيت. طيب ايه الحل؟ حقترح عليكم يا أمهات أساليب جديدة حتساعدكم فى  </p>
-          </div>
-
-        </div> 
-        <div class="col-md-4 footer-contact my-2">
-          <h5 class="mb-5">تواصل معنا </h5>
-
-          <div class="contact-content row">
-            <div class="col-md-2 mt-1 col-2">
-              <span class="contact-i"><i class="fas fa-map-marker-alt"></i></span>
-            </div>
-
-            <div class="col-md-10 contact-text col-10" >
-              <p> 37  مدينه نصر</p>
-              </div>
-          </div>
-          
-            <div class="contact-content row">
-              <div class="col-md-2 col-2 mt-1">
-              <span class="contact-i"><i class="fa fa-phone"></i></span>
-            </div>
-
-            <div class="col-md-10 contact-text  col-10" >
-              <p> +202 26903117  /+02 28943554  </p>
-              </div>
-        </div>
-          
-          
-        <div class="contact-content row">
-          <div class="col-md-2 col-2 mt-1">
-          <span class=" contact-i"><i class=" far   fa-envelope"></i></span>
-        </div>
-          <div class="col-md-10 col-10 contact-text" >
-          <a href="#"> mailto:info@de-tc.com </a>
-          </div>
-        </div>
+      <!-- end section above nav bar -->
 
 
-        </div>
-        <div class="col-md-4 footer-form my-2">
-        
-        <form>
-          <div class="form-group">
-            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="الاسم">
-          </div>
-                      
-          <div class="form-group">
-            <input type="Phone" class="form-control" id="exampleFormControlInput1" placeholder="الموبايل">
-          </div>
-                      
-          <div class="form-group">
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="الايميل">
-          </div>
+		
 
-          <div class="form-group">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="اكتب رسالتك"></textarea>
-          </div>
-          <button type="button" class="btn  btn-block "> ارسلي رسالتك <i class="fas fa-share-square"></i></button>
-        </form>
+   <nav class="main-color navbar  fixed-nav my-nav navbar-expand-lg navbar-primary right-nav">
 
-        </div>
+      <!-- right side -->
+
+     <a class="ml-5 navbar-brand nav-logo" href="#"> <img class="img-fluid" src="./images/logo.png"> </a>
+  <!-- hide--->
+          <li class="nav-item hide-min list-unstyled">
+                  <a class="nav-link" href="index.html" data-value="">الرئيسيه</a>
+                  <span class="border-1"></span>
+                  <span class="border-2"></span>
+                  <span class="border-3"></span>
+                  <span class="border-4"></span>
+              </li>
+
   
-   </div>  
-</div>
-</footer>
+              <li class="nav-item hide-min list-unstyled">
+                  <a class="nav-link" href="book.html" data-value="testmonial">مقالات</a>
+                      <span class="border-1"></span>
+                      <span class="border-2"></span>
+                      <span class="border-3"></span>
+                      <span class="border-4"></span>
+                      
+              </li>
+
+              
+              <li class="nav-item dropdown hide-min list-unstyled">
+                  <a class="nav-link profile-face dropdown-toggle"  id="navbarDropdown" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      منتجاتنا
+                  </a>
+                  <div class="dropdown-menu second-color profile" aria-labelledby="navbarDropdown ">
+                      <div class="">
+                          <a class="dropdown-item " href="#">سيدات</a>
+                          <a class="dropdown-item" href="sign-up.html"> اطفال</a>
+                      </div>
+                  </div>
+
+              </li>
+    
+          
+     
 
 
-<footer class="last-section ">
-<div class="container py-1 d-flex justify-content-between">  
+      <!--end  right side -->
 
-    <div class=" social py-3 text-center">
-      <span><a href="#"> <i class="fab fa-facebook-square"></i> </a></span>
-      <span><a href="#"> <i class="fab fa-twitter-square"></i> </a></span>
-      <span> <a href="#"> <i class="fab fa-instagram"></i> </a></span>
-      <span> <a href="#"> <i class="fab fa-google-plus-square"></i> </a></span>
+   
 
+     
+        
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggle"><i class="fas fa-bars"></i></span>
+  </button>
+  
+      <div class="collapse navbar-collapse mr-5 left-side" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+      
+        <li class="nav-item hide-max">
+                  <a class="nav-link" href="index.html" data-value="">الرئيسيه</a>
+                  <span class="border-1"></span>
+                  <span class="border-2"></span>
+                  <span class="border-3"></span>
+                  <span class="border-4"></span>
+              </li>
+
+  
+              <li class="nav-item hide-max">
+                  <a class="nav-link" href="book.html" data-value="testmonial">مقالات </a>
+                      <span class="border-1"></span>
+                      <span class="border-2"></span>
+                      <span class="border-3"></span>
+                      <span class="border-4"></span>
+              </li>
+          
+
+                
+              <li class="nav-item dropdown hide-max">
+                  <a class="nav-link profile-face dropdown-toggle"  id="navbarDropdown" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      منتجاتنا
+                  </a>
+                  <div class="dropdown-menu second-color profile" aria-labelledby="navbarDropdown ">
+                      <div class="">
+                          <a class="dropdown-item " href="#">سيدات</a>
+                          <a class="dropdown-item" href="sign-up.html"> اطفال</a>
+                      </div>
+                  </div>
+
+              </li>
+              
+
+
+                <li class="nav-item profile-face">
+                    <a class="nav-link" href="index.html" data-value=""><img src="./images/face.jpg"></a>
+                
+                </li>
+
+
+
+              <li class="nav-item dropdown  notfication-container ">
+                  <a class="nav-link  dropdown-toggle"  id="navbarDropdown" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="far fa-bell"></i>
+                  </a>
+                  <div class="notfication second-color dropdown-menu" aria-labelledby="navbarDropdown">
+                         <div class="">
+                            <p><a class="dropdown-item " href="#">notficaaaaaaaaaaaaation</a></p>
+                            <p><a class="dropdown-item " href="#">notficaaaaaaaaaaaaation</a></p>
+                            <p><a class="dropdown-item " href="#">notficaaaaaaaaaaaaation</a></p>
+                        </div>
+                      </div>
+              </li>
+
+
+
+
+  
+            
+          </ul>
+   </div>
+      </nav>
+  <!-- end nav bar -->
+
+  <!-- start home section -->
+
+  <section id='home' class="mt-2">
+    <div class="overlay">
+      <div class="container mt-5 pt-5">
+      <div class="home-content row">
+        <div class="col-md-10 display-4 mt-5">
+            <h2> مرحبا !</h2>
+            <p>اهلا بيكي في اكتر موقع مختلف </p>
+        </div>
+        <div class="col-md-2 onlymob">
+          <div class="registiration">
+              <img class="img-fluid" src="./images/gif sign in.gif">
+              <a id="signIn" class="sign" href=""> .</a>
+              <a id="signUp" class="regester" href="">.</a>
+          </div>
+        </div>
+      
+
+        </div>
+      </div>
+    </div>
+    <!-- popup -->
+    <div class="popup">
+        <div class="login-popup">
+            <form class="form-group">
+                <input required type="mail" class="form-control my-3" placeholder="اسم المستخدم">
+                <input required type="password" class="form-control my-3" placeholder=" الرقم السري">
+                <button type="submit" class="btn my-3">تسجيل الدخول</button>
+
+            </form>
+        </div>
+    </div>
+    <div class="popup2">
+        <div class="login-popup2">
+            <form class="form-group">
+                    <div class="containr">
+                            <div class="row">
+                              <div class="col-md-6">
+                                  <input required type="text" class="form-control my-3" placeholder="الاسم الاول ">
+                              </div>
+                              <div class="col-md-6">
+                                  <input required type="text" class="form-control my-3" placeholder=" الاسم الثاني">
+                              </div>
+                              <div class="col-md-6">
+                                <input required type="mail" class="form-control my-3" placeholder=" الايميل ">
+                              </div>
+                              <div class="col-md-6">
+                                    <input type="password" class="form-control my-3" placeholder=" الرقم السري">
+                              </div>
+                            </div>
+                          </div>
+                <button type="submit" class="btn my-3"> انشاء الحساب</button>
+
+            </form>
+        </div>
     </div>
 
-  <div class="copyright py-3">
-    <p>جميع الحقوق محفوظه لشركه<a href=""> ماما في الشغل</a></p>
-  </div>
-</div>
-</footer> 
+  </section>
+    <!-- end home section -->
 
-<!-- end last seection -->
+    <!-- start product section -->
+    <section id="products">
+
+   
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="mycard">
+            <img class="img-fluid" src="./images/product-2.png">
+            <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+             <div class="producrt-content text-center my-2">
+               <p class="">الشننطه الجميله</p>
+               <div class="icons"> 
+                <span> <i class="far fa-star"></i> </span>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i> 
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div>  <span class="old-price"> 300 </span> <span class="price"> 200 </span>  </div>
+             </div>
+
+          </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="mycard">
+              <img class="img-fluid" src="./images/product-3.png">
+              <span class="store-item-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+               <div class="producrt-content text-center my-2">
+                 <p class="">الشننطه الجميله</p>
+                 <div class="icons"> 
+                  <span> <i class="far fa-star"></i> </span>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i> 
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div>  <span class="old-price"> 300 </span> <span class="price"> 200 </span>  </div>
+               </div>
+  
+            </div>
+          </div>
+          <div class="swiper-slide">
+              <div class="mycard">
+                <img class="img-fluid" src="./images/product-1.png">
+                <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                 <div class="producrt-content text-center my-2">
+                   <p class="">الشننطه الجميله</p>
+                   <div class="icons"> 
+                    <span> <i class="far fa-star"></i> </span>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div>  <span class="old-price"> 300 </span> <span class="price"> 200 </span>  </div>
+                 </div>
+    
+              </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="mycard">
+                  <img class="img-fluid" src="./images/product-4.png">
+                  <span class="store-item-icon">
+                      <i class="fas fa-shopping-cart"></i>
+                    </span>
+                   <div class="producrt-content text-center my-2">
+                     <p class="">الشننطه الجميله</p>
+                     <div class="icons"> 
+                      <span> <i class="far fa-star"></i> </span>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i> 
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div>  <span class="old-price"> 300 </span> <span class="price"> 200 </span>  </div>
+                   </div>
+      
+                </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="mycard">
+                    <img class="img-fluid" src="./images/product-5.png">
+                    <span class="store-item-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                      </span>
+                     <div class="producrt-content text-center my-2">
+                       <p class="">الشننطه الجميله</p>
+                       <div class="icons"> 
+                        <span> <i class="far fa-star"></i> </span>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i> 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div>  <span class="old-price"> 300 </span> <span class="price"> 200 </span>  </div>
+                     </div>
+        
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="mycard">
+                      <img class="img-fluid" src="./images/product-6.png">
+                      <span class="store-item-icon">
+                          <i class="fas fa-shopping-cart"></i>
+                        </span>
+                       <div class="producrt-content text-center my-2">
+                         <p class="">الشننطه الجميله</p>
+                         <div class="icons"> 
+                          <span> <i class="far fa-star"></i> </span>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i> 
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div>  <span class="old-price"> 300 </span> <span class="price"> 200 </span>  </div>
+                       </div>
+          
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="mycard">
+                        <img class="img-fluid" src="./images/product-9.png">
+                        <span class="store-item-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                          </span>
+                         <div class="producrt-content text-center my-2">
+                           <p class="">الشننطه الجميله</p>
+                           <div class="icons"> 
+                            <span> <i class="far fa-star"></i> </span>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i> 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </div>
+                          <div>  <span class="old-price"> 300 </span> <span class="price"> 200 </span>  </div>
+                         </div>
+            
+                      </div>
+                    </div>
+
+    
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  
+  </section>
+    
+     <!-- <articles section -->
+       <section id="article" class="py-5">
+       <header class="heading text-center">
+          <h2 class="color-font2">   <i class="fas mr-3 fa-file-alt"></i>اخر المقالات </h2> 
+             <hr>
+       </header>
+       <div class="container">
+        <div class="row mt-3">
+
+          <div class="col-md-4 w-100 my-2">
+            <div class="all-card">
+              <img class="img-fluid" src="./images/pen.jpg">
+              <div class="card-content p-3">
+                  <p><i class="far fa-clock mr-2"> </i> 1  يوليو 2019  <i class="fas fa-user mx-2">
+                  </i> بواسطه <a href="">الادمن</a></p>
+                  <h5> العنوان</h5>
+                  <p>- سواء كنتي أم عاملة أو غير عامله ، فوجود جدول هيساعدك انتي و ولادك 
+                      انكوا تعرفوا تقسموا المذاكرة علي الأيام و الوقت . بصفة عامة الأطفال.... </p>
+                  <div class="card-last">
+                    <div class="float-left entry-footer read-more">
+                      <a href="#">المزيد <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                    <div class="float-right view">
+                        <p> تم العرض ( 20 ) </p>
+                      </div>
+                      <div class="clearfix"></div>
+                  </div>
+              </div>
+            </div>
+
+          </div> 
+
+          <div class="col-md-4 w-100 my-2">
+              <div class="all-card">
+                <img class="img-fluid" src="./images/new girl shot copy.jpg">
+                <div class="card-content p-3">
+                    <p><i class="far fa-clock mr-2"> </i> 1  يوليو 2019  <i class="fas fa-user mx-2">
+                    </i> بواسطه <a href="">الادمن</a></p>
+                    <h5> العنوان</h5>
+                    <p>- سواء كنتي أم عاملة أو غير عامله ، فوجود جدول هيساعدك انتي و ولادك 
+                        انكوا تعرفوا تقسموا المذاكرة علي الأيام و الوقت . بصفة عامة الأطفال.... </p>
+                        <div class="card-last">
+                            <div class="float-left entry-footer read-more">
+                              <a href="#">المزيد <i class="fas fa-arrow-left"></i></a>
+                            </div>
+                            <div class="float-right view">
+                                <p> تم العرض ( 20 ) </p>
+                              </div>
+                              <div class="clearfix"></div>
+                          </div>
+                </div>
+              </div>
+  
+            </div>
+
+            <div class="col-md-4 w-100 my-2">
+                <div class="all-card">
+                  <img class="img-fluid" src="./images/doctor.jpg">
+                  <div class="card-content p-3">
+                      <p><i class="far fa-clock mr-2"> </i> 1  يوليو 2019  <i class="fas fa-user mx-2">
+                      </i> بواسطه <a href="">الادمن</a></p>
+                      <h5> العنوان</h5>
+                      <p>- سواء كنتي أم عاملة أو غير عامله ، فوجود جدول هيساعدك انتي و ولادك 
+                          انكوا تعرفوا تقسموا المذاكرة علي الأيام و الوقت . بصفة عامة الأطفال.... </p>
+                          <div class="card-last">
+                              <div class="float-left entry-footer read-more">
+                                <a href="#">المزيد <i class="fas fa-arrow-left"></i></a>
+                              </div>
+                              <div class="float-right view">
+                                  <p> تم العرض ( 20 ) </p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                  </div>
+                </div>
+    
+              </div>
+
+              <div class="col-md-4 w-100 my-2">
+                  <div class="all-card">
+                    <img class="img-fluid" src="./images/lazy.jpg">
+                    <div class="card-content p-3">
+                        <p><i class="far fa-clock mr-2"> </i> 1  يوليو 2019  <i class="fas fa-user mx-2">
+                        </i> بواسطه <a href="">الادمن</a></p>
+                        <h5> العنوان</h5>
+                        <p>- سواء كنتي أم عاملة أو غير عامله ، فوجود جدول هيساعدك انتي و ولادك 
+                            انكوا تعرفوا تقسموا المذاكرة علي الأيام و الوقت . بصفة عامة الأطفال.... </p>
+                            <div class="card-last">
+                                <div class="float-left entry-footer read-more">
+                                  <a href="#">المزيد <i class="fas fa-arrow-left"></i></a>
+                                </div>
+                                <div class="float-right view">
+                                    <p> تم العرض ( 20 ) </p>
+                                  </div>
+                                  <div class="clearfix"></div>
+                              </div>
+                    </div>
+                  </div>
+      
+                </div>
+
+                <div class="col-md-4 w-100 my-2">
+                    <div class="all-card">
+                      <img class="img-fluid" src="./images/heathy.jpg">
+                      <div class="card-content p-3">
+                          <p><i class="far fa-clock mr-2"> </i> 1  يوليو 2019  <i class="fas fa-user mx-2">
+                          </i> بواسطه <a href="">الادمن</a></p>
+                          <h5> العنوان</h5>
+                          <p>- سواء كنتي أم عاملة أو غير عامله ، فوجود جدول هيساعدك انتي و ولادك 
+                              انكوا تعرفوا تقسموا المذاكرة علي الأيام و الوقت . بصفة عامة الأطفال.... </p>
+                              <div class="card-last">
+                                  <div class="float-left entry-footer read-more">
+                                    <a href="#">المزيد <i class="fas fa-arrow-left"></i></a>
+                                  </div>
+                                  <div class="float-right view">
+                                      <p> تم العرض ( 20 ) </p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                      </div>
+                    </div>
+        
+                  </div>
+
+
+                  <div class="col-md-4 w-100 my-2">
+                      <div class="all-card">
+                        <img class="img-fluid" src="./images/panner.jpg">
+                        <div class="card-content p-3">
+                            <p><i class="far fa-clock mr-2"> </i> 1  يوليو 2019  <i class="fas fa-user mx-2">
+                            </i> بواسطه <a href="">الادمن</a></p>
+                            <h5> العنوان</h5>
+                            <p>- سواء كنتي أم عاملة أو غير عامله ، فوجود جدول هيساعدك انتي و ولادك 
+                                انكوا تعرفوا تقسموا المذاكرة علي الأيام و الوقت . بصفة عامة الأطفال.... </p>
+                                <div class="card-last">
+                                    <div class="float-left entry-footer read-more">
+                                      <a href="#">المزيد <i class="fas fa-arrow-left"></i></a>
+                                    </div>
+                                    <div class="float-right view">
+                                        <p> تم العرض ( 20 ) </p>
+                                      </div>
+                                      <div class="clearfix"></div>
+                                  </div>
+                        </div>
+                      </div>
+          
+                    </div>
+          
+                    </div>
+
+          
+          
+         </div>
+       </div>
+    </section>
+
+    <!-- end articles -->
+      <!-- start addvertsmebts -->
+
+    <section id="adds" class="py-5">
+      <div class="container new-add">
+       <a href="#"><img class="img-fluid" src="./images/adds.jpg"> </a> 
+      </div>
+    </section>
+
+      <!-- end addvertsmebts -->
+
+     
+
+
+      <!-- start foooooooooooooooetr -->
+
+
+          <!-- start footer  section -->
+
+    <footer class="contact-container">
+        <div class="container">
+
+        <div class="row mt-4  contact-doupple">
+					
+						<div class="col-md-4 footer-about my-2">
+						
+							<h5 class="mb-5">من نجن</h5>	
+              <div class="contact-content ">
+                <p> <span class="font-color2">ماما في الشغل </span> هي شركه متخصصه في <br>---------------------
+                  ----------------------- اكلوا الخضار واللحمة والفراخ أو السمك اللى بيبقوا فى البيت. طيب ايه الحل؟ حقترح عليكم يا أمهات أساليب جديدة حتساعدكم فى  </p>
+              </div>
+
+            </div>
+            
+            <div class="col-md-4 footer-contact my-2">
+              <h5 class="mb-5">تواصل معنا </h5>
+
+              <div class="contact-content row">
+                <div class="col-md-2 mt-1 col-2">
+                  <span class="contact-i"><i class="fas fa-map-marker-alt"></i></span>
+                </div>
+    
+                <div class="col-md-10 contact-text col-10" >
+                  <p> 37  مدينه نصر</p>
+                  </div>
+              </div>
+              
+              	<div class="contact-content row">
+                  <div class="col-md-2 col-2 mt-1">
+                  <span class="contact-i"><i class="fa fa-phone"></i></span>
+                </div>
+
+                <div class="col-md-10 contact-text  col-10" >
+                  <p> +202 26903117  /+02 28943554  </p>
+                  </div>
+						</div>
+							
+							
+						<div class="contact-content row">
+              <div class="col-md-2 col-2 mt-1">
+              <span class=" contact-i"><i class=" far   fa-envelope"></i></span>
+            </div>
+							<div class="col-md-10 col-10 contact-text" >
+							<a href="#"> mailto:info@de-tc.com </a>
+							</div>
+						</div>
+
+
+            </div>
+						
+						<div class="col-md-4 footer-form my-2">
+						
+						<form>
+              <div class="form-group">
+                <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="الاسم">
+              </div>
+                          
+              <div class="form-group">
+                <input type="Phone" class="form-control" id="exampleFormControlInput1" placeholder="الموبايل">
+              </div>
+                          
+              <div class="form-group">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="الايميل">
+              </div>
+
+              <div class="form-group">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="اكتب رسالتك"></textarea>
+              </div>
+              <button type="button" class="btn  btn-block "><i class="fas fa-share-square"></i> Send Message</button>
+            </form>
+
+						</div>
+			
+			 </div>
+      
+        
+    </div>
+  </footer>
+  <footer class="last-section ">
+    <div class="container py-1">  
+
+        <div class="float-left social py-3 text-center">
+          <span><a href="#"> <i class="fab fa-facebook-square"></i> </a></span>
+          <span><a href="#"> <i class="fab fa-twitter-square"></i> </a></span>
+          <span> <a href="#"> <i class="fab fa-instagram"></i> </a></span>
+          <span> <a href="#"> <i class="fab fa-google-plus-square"></i> </a></span>
+
+        </div>
+
+      <div class="float-right copyright py-3">
+        <p>جميع الحقوق محفوظه لشركه<a href=""> ماما في الشغل</a></p>
+      </div>
+
+      <div class="clearfix"></div>
+
+    </div>
+  </footer> 
+
+  <!-- end last seection -->
+
+  		<!-- start sccroll-top   -->
+
+  <div class="sccroll-top"><i class="fas fa-arrow-alt-circle-up"></i></div>
+		
+	<!-- end sccroll-top   -->
+
+
+
+
+
+
+
+
+    
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

@@ -16,13 +16,13 @@
 
   //  scroll button
 
-  // $(".sccroll-top i").click (function() {
-  //   $("html , body").animate({ scrollTop: 0	},1000)	});  
+  $(".sccroll-top i").click (function() {
+    $("html , body").animate({ scrollTop: 0	},1000)	});  
   
-  // $(window).scroll( function () {	
-  // if ($(window). scrollTop () >= 600){$(".sccroll-top i").fadeIn(400)}
-  // else ($(".sccroll-top i").fadeOut(400) )
-  //    });
+  $(window).scroll( function () {	
+  if ($(window). scrollTop () >= 600){$(".sccroll-top i").fadeIn(400)}
+  else ($(".sccroll-top i").fadeOut(400) )
+     });
 
   //    $(window).scroll( function () {	
   //     if ($(window). scrollTop () >= 100){
@@ -165,5 +165,16 @@ function fixedForm(){
 fixedForm()
 
 //  end form contact popup;
+
+// article right side function
+ function rightSide(){
+  $(".right-side-header h5").click(function(){
+    console.log($(this).siblings())
+    $(this).siblings().toggleClass("hideUl")
+
+  })
+
+};
+rightSide();
 
 

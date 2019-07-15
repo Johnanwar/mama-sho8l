@@ -29,6 +29,11 @@
             <div class="nav-logo">
                 <a href="index.html"><img class="logo img-responsive" src="./images/logo.png" alt=" logo"></a>
             </div>
+
+            <div class="nav-search">
+                <input type="search" class="form-control" placeholder="ابحثي هنا ">
+                <a><i class="fas fa-search"></i></a>
+            </div>
          
             <ul class="big-nav-links">
               <li><a href="index.html">الرئيسيه </a></li>
@@ -44,10 +49,19 @@
                     </a>
                 </div>
             </li>
-
-
-
-              <li><a href="article.html">مقالات</a></li>
+            <li class="nav-item dropdown producrt-dropdown list-unstyled ">
+                <a class="nav-link  dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    مقالات
+                </a>
+                <div class="dropdown-menu second-color " aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#"> <i class="fas mr-3 fa-home"></i> ماما في البيت </a>
+                    <a class="dropdown-item" href="#"> <i class="fas mr-3 fa-utensils"></i> ماما في المطبخ  </a>
+                    <a class="dropdown-item" href="#"> <i class="fas mr-3 fa-briefcase"></i> ماما في الشغل  </a>
+                    <a class="dropdown-item" href="#"> <i class="fas mr-3 fa-users"></i> ماماوالاولاد  </a>
+                </div>
+            </li>
+              <li><a href="article.html">  اخبارنا </a></li>
+            
               <li><a href="#"><img class="profile img-responsive" src="./images/face.jpg" alt=" profile"></a></li>
 
               <li class="nav-item dropdown notfication-dropdown list-unstyled ">
@@ -63,68 +77,11 @@
                 <span  id="notfi"> 0 </span>
             </li>
 
-              <li id="nav-cart" class="cart-header ">
-                <p id="nav-cart" class="test-nav mb-0">
-                  <span class="cart-info_icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span> 
-                  <span id="item-count">3 </span> منتجات -
-                  <span class="item-total">500</span>
-                </p>
+            <li id="nav-cart" class="cart-header ">
+                <a href="#" <i class="fas fa-shopping-cart"></i> </a> 
+                <span  id="cart-notfi"> 0 </span>
+              </li>
 
-    
-                </li>
-  <!-- my  cart -->
-               <div id="cart" class="cart-popup ">
-            <!-- cart item -->
-              <span id="cart-popup-close" >
-              <i class="fas fa-times-circle"></i>
-            </span>
-            <div class="cart-item d-flex justify-content-between mt-3">
-                <img src="images/product-1.png" class="img-fluid rounded-circle" id="item-img" alt="">
-                <div class="item-text">
-                  <p id="cart-item-title" class=" mb-0">  الاجنده الجديده</p>
-                  <span id="cart-item-price" class="cart-item-price" class="mb-0">50</span>
-                </div>
-                <a href="#" id='cart-item-remove' class="cart-item-remove">
-                  <i class="fas fa-trash"></i>
-                </a>
-              </div>
-                    <!-- cart item -->
-            <div class="cart-item d-flex justify-content-between mt-3">
-                <img src="images/product-1.png" class="img-fluid rounded-circle" id="item-img" alt="">
-                <div class="item-text">
-                  <p id="cart-item-title" class=" mb-0">  الاجنده الجديده</p>
-                  <span id="cart-item-price" class="cart-item-price" class="mb-0">50</span>
-                </div>
-                <a href="#" id='cart-item-remove' class="cart-item-remove">
-                  <i class="fas fa-trash"></i>
-                </a>
-              </div>
-                    <!-- cart item -->
-            <div class="cart-item d-flex justify-content-between mt-3">
-                <img src="images/product-1.png" class="img-fluid rounded-circle" id="item-img" alt="">
-                <div class="item-text">
-                  <p id="cart-item-title" class="f mb-0">  الاجنده الجديده</p>
-                  <span id="cart-item-price" class="cart-item-price text-center">50</span>
-                </div>
-                <a href="#" id='cart-item-remove' class="cart-item-remove">
-                  <i class="fas fa-trash"></i>
-                </a>
-            </div>
-                          <!--end of  cart item -->
-          <!-- cart total -->
-          <div class="cart-total-container d-flex justify-content-around text-capitalize mt-2">
-              <h5>الاجمالي</h5>
-              <h5> <strong id="cart-total" class="font-weight-bold">150</strong> </h5>
-            </div>
-            <!--end cart total -->
-            <!-- cart buttons -->
-            <div class="cart-buttons-container my-3 d-flex justify-content-between justify-content-center">
-              <a href="#" id="clear-cart" class="btn btn-outline-secondary  ">ازاله العربه</a>
-              <a href="#" class="btn btn-outline-secondary ">شراء</a>
-            </div>
-            <!--end of  cart buttons -->
-              </div>
-  <!-- end my  cart -->
       
             </ul>
           </nav>
@@ -191,179 +148,104 @@
             <hr>
            </header>
 
-   
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-  
-          <div class="swiper-slide">
-            <div class="mycard">
-              <img class="img-fluid" src="./images/product-2.png">
-              <span class="store-item-icon">
-                  <i class="fas fa-shopping-cart"></i>
-                </span>
-               <div class="producrt-content d-flex justify-content-between text-center px-3 my-2">
-                 <p class="py-2">الشننطه الجميله</p>
-                 <!-- <div class="icons"> 
-                  <span> <i class="far fa-star"></i> </span>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div> -->
-                <p class="price py-2 "> 200 </p> 
-                <!-- <div>  </div> -->
-                <!-- <span class="old-price"> 300 </span> -->
-                
-               </div>
-  
-            </div>
-          </div>
-          <div class="swiper-slide">
-              <div class="mycard">
-                <img class="img-fluid" src="./images/product-3.png">
-                <span class="store-item-icon">
-                    <i class="fas fa-shopping-cart"></i>
-                  </span>
-                  <div class="producrt-content d-flex justify-content-between text-center px-3 my-2">
-                      <p class="py-2">الشننطه الجميله</p>
-                      <!-- <div class="icons"> 
-                       <span> <i class="far fa-star"></i> </span>
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i> 
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i>
-                     </div> -->
-                     <p class="price py-2 "> 200 </p> 
-                     <!-- <div>  </div> -->
-                     <!-- <span class="old-price"> 300 </span> -->
-                     
-                    </div>
-    
-              </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="mycard">
-                  <img class="img-fluid" src="./images/product-1.png">
-                  <span class="store-item-icon">
-                      <i class="fas fa-shopping-cart"></i>
-                    </span>
-                    <div class="producrt-content d-flex justify-content-between text-center px-3 my-2">
-                        <p class="py-2">الشننطه الجميله</p>
-                        <!-- <div class="icons"> 
-                         <span> <i class="far fa-star"></i> </span>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i> 
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                       </div> -->
-                       <p class="price py-2 "> 200 </p> 
-                       <!-- <div>  </div> -->
-                       <!-- <span class="old-price"> 300 </span> -->
-                       
-                      </div>
-      
-                </div>
-              </div>
-              <div class="swiper-slide">
-                  <div class="mycard">
-                    <img class="img-fluid" src="./images/product-4.png">
-                    <span class="store-item-icon">
-                        <i class="fas fa-shopping-cart"></i>
-                      </span>
-                      <div class="producrt-content d-flex justify-content-between text-center px-3 my-2">
-                          <p class="py-2">الشننطه الجميله</p>
-                          <!-- <div class="icons"> 
-                           <span> <i class="far fa-star"></i> </span>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i> 
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                         </div> -->
-                         <p class="price py-2 "> 200 </p> 
-                         <!-- <div>  </div> -->
-                         <!-- <span class="old-price"> 300 </span> -->
-                         
-                        </div>
-        
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="mycard">
-                      <img class="img-fluid" src="./images/product-5.png">
-                      <span class="store-item-icon">
-                          <i class="fas fa-shopping-cart"></i>
-                        </span>
-                        <div class="producrt-content d-flex justify-content-between text-center px-3 my-2">
-                            <p class="py-2">الشننطه الجميله</p>
-                            <!-- <div class="icons"> 
-                             <span> <i class="far fa-star"></i> </span>
-                             <i class="fas fa-star"></i>
-                             <i class="fas fa-star"></i> 
-                             <i class="fas fa-star"></i>
-                             <i class="fas fa-star"></i>
-                           </div> -->
-                           <p class="price py-2 "> 200 </p> 
-                           <!-- <div>  </div> -->
-                           <!-- <span class="old-price"> 300 </span> -->
-                           
-                          </div>
-          
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="mycard">
-                        <img class="img-fluid" src="./images/product-6.png">
-                        <span class="store-item-icon">
-                            <i class="fas fa-shopping-cart"></i>
-                          </span>
-                          <div class="producrt-content d-flex justify-content-between text-center px-3 my-2">
-                              <p class="py-2">الشننطه الجميله</p>
-                              <!-- <div class="icons"> 
-                               <span> <i class="far fa-star"></i> </span>
-                               <i class="fas fa-star"></i>
-                               <i class="fas fa-star"></i> 
-                               <i class="fas fa-star"></i>
-                               <i class="fas fa-star"></i>
-                             </div> -->
-                             <p class="price py-2 "> 200 </p> 
-                             <!-- <div>  </div> -->
-                             <!-- <span class="old-price"> 300 </span> -->
-                             
-                            </div>
-            
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="mycard">
-                          <img class="img-fluid" src="./images/product-9.png">
-                          <span class="store-item-icon">
-                              <i class="fas fa-shopping-cart"></i>
-                            </span>
-                            <div class="producrt-content d-flex justify-content-between text-center px-3 my-2">
-                                <p class="py-2">الشننطه الجميله</p>
-                                <!-- <div class="icons"> 
-                                 <span> <i class="far fa-star"></i> </span>
-                                 <i class="fas fa-star"></i>
-                                 <i class="fas fa-star"></i> 
-                                 <i class="fas fa-star"></i>
-                                 <i class="fas fa-star"></i>
-                               </div> -->
-                               <p class="price py-2 "> 200 </p> 
-                               <!-- <div>  </div> -->
-                               <!-- <span class="old-price"> 300 </span> -->
-                               
-                              </div>
+           <div class="swiper-container container w-100">
+            <div class="swiper-wrapper ">
               
+              <div class="swiper-slide my-5">
+                <div class="product-card ">
+                   <img class="img-responsive img-fluid" src="./images/product-1.png">
+                   <div class="product-card-content p-4">
+                      <div class="d-flex justify-content-around">
+                          <h5>اسم المنتج</h5>
+                          <h5> 200 <i class="fas fa-hand-holding-usd"></i> </h5>
                         </div>
-                      </div>
+                        <p>اسم المنتج اسم المنتج اسم المنتجاسم المنتج اسم المنتج</p>
+                   </div>
+                </div>      
+              </div>
+              <div class="swiper-slide my-5">
+                  <div class="product-card ">
+                     <img class="img-responsive img-fluid" src="./images/product-1.png">
+                     <div class="product-card-content p-4">
+                        <div class="d-flex justify-content-around">
+                            <h5>اسم المنتج</h5>
+                            <h5> 200 <i class="fas fa-hand-holding-usd"></i> </h5>
+                          </div>
+                          <p>اسم المنتج اسم المنتج اسم المنتجاسم المنتج اسم المنتج</p>
+                     </div>
+                  </div>      
+                </div>
+                <div class="swiper-slide my-5">
+                    <div class="product-card ">
+                       <img class="img-responsive img-fluid" src="./images/product-2.png">
+                       <div class="product-card-content p-4">
+                          <div class="d-flex justify-content-around">
+                              <h5>اسم المنتج</h5>
+                              <h5> 200 <i class="fas fa-hand-holding-usd"></i> </h5>
+                            </div>
+                            <p>اسم المنتج اسم المنتج اسم المنتجاسم المنتج اسم المنتج</p>
+                       </div>
+                    </div>      
+                  </div>
+                  <div class="swiper-slide my-5">
+                <div class="product-card ">
+                   <img class="img-responsive img-fluid" src="./images/product-3.png">
+                   <div class="product-card-content p-4">
+                      <div class="d-flex justify-content-around">
+                          <h5>اسم المنتج</h5>
+                          <h5> 200 <i class="fas fa-hand-holding-usd"></i> </h5>
+                        </div>
+                        <p>اسم المنتج اسم المنتج اسم المنتجاسم المنتج اسم المنتج</p>
+                   </div>
+                </div>      
+              </div>
+              <div class="swiper-slide my-5">
+                  <div class="product-card ">
+                     <img class="img-responsive img-fluid" src="./images/product-6.png">
+                     <div class="product-card-content p-4">
+                        <div class="d-flex justify-content-around">
+                            <h5>اسم المنتج</h5>
+                            <h5> 200 <i class="fas fa-hand-holding-usd"></i> </h5>
+                          </div>
+                          <p>اسم المنتج اسم المنتج اسم المنتجاسم المنتج اسم المنتج</p>
+                     </div>
+                  </div>      
+                </div>
+                <div class="swiper-slide my-5">
+                    <div class="product-card ">
+                       <img class="img-responsive img-fluid" src="./images/product-4.png">
+                       <div class="product-card-content p-4">
+                          <div class="d-flex justify-content-around">
+                              <h5>اسم المنتج</h5>
+                              <h5> 200 <i class="fas fa-hand-holding-usd"></i> </h5>
+                            </div>
+                            <p>اسم المنتج اسم المنتج اسم المنتجاسم المنتج اسم المنتج</p>
+                       </div>
+                    </div>      
+                  </div>
+                  <div class="swiper-slide my-5">
+                <div class="product-card ">
+                   <img class="img-responsive img-fluid" src="./images/product-5.png">
+                   <div class="product-card-content p-4">
+                      <div class="d-flex justify-content-around">
+                          <h5>اسم المنتج</h5>
+                          <h5> 200 <i class="fas fa-hand-holding-usd"></i> </h5>
+                        </div>
+                        <p>اسم المنتج اسم المنتج اسم المنتجاسم المنتج اسم المنتج</p>
+                   </div>
+                </div>      
+              </div>
+         
+
+            </div> 
+            <!-- Add Pagination -->
+            <div class="swiper-pagination mt-5"></div>
+            <div class="swiper-button-next"> <i class="fas fa-arrow-left"></i></div>
+            <div class="swiper-button-prev"> <i class="fas fa-arrow-right"></i> </div>
+          </div>
+
   
-      
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-      </div>
     </section>
-      <!-- end about section -->
 
       <!-- start articles section -->
       <section id="article">
@@ -568,9 +450,25 @@
 
         </div>
         <!-- fixed cart menu -->
+        <!-- login popup -->
+    <div class="popup">
+        <div class="login-popup">
+            <form class="form-group">
+                <input required type="mail" class="form-control my-3" placeholder="اسم المستخدم">
+                <div class="pass-container">
+                <input required type="password" class="form-control my-3" placeholder=" الرقم السري">
+                <i class="fas fa-eye"></i>
+              </div>
+                <button type="submit" class="btn my-3">تسجيل الدخول</button>
+
+            </form>
+        </div>
+    </div>
+        <!-- login popup -->
+
 
         <!-- start fixed contact form -->
-        <div class="fixed-contact-form ">
+        <!-- <div class="fixed-contact-form ">
             <div class=" footer-form px-4 my-2">
         
                 <form>
@@ -597,10 +495,9 @@
         </div>
         <div class="contact-fixed-icon">
             <i class="far fa-envelope"></i>
-        </div>
+        </div> -->
 
         <!-- end fixed contact form -->
-
 <!-- ------------------------/* stat footer */*------------>
 <footer class="contact-container">
     <div class="container">
@@ -608,7 +505,7 @@
       
         <div class="col-md-4 footer-about my-2">
         
-          <h5 class="mb-5">من نحن</h5>	
+          <h5 class="mb-3">من نحن</h5>	
           <div>
             <p> <span class="font-color2">ماما في الشغل </span> هي شركه متخصصه في <br>---------------------
               ----------------------- اكلوا الخضار واللحمة والفراخ أو السمك اللى بيبقوا فى البيت. طيب ايه الحل؟ حقترح عليكم يا أمهات أساليب جديدة حتساعدكم فى  </p>
@@ -616,7 +513,7 @@
 
         </div> 
         <div class="col-md-4 footer-contact my-2">
-          <h5 class="mb-5">تواصل معنا </h5>
+          <h5 class="mb-3">تواصل معنا </h5>
 
           <div class="contact-content row">
             <div class="col-md-2 mt-1 col-2">
@@ -651,26 +548,14 @@
 
         </div>
         <div class="col-md-4 footer-form my-2">
-        
-        <form>
-          <div class="form-group">
-            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="الاسم">
-          </div>
-                      
-          <div class="form-group">
-            <input type="Phone" class="form-control" id="exampleFormControlInput1" placeholder="الموبايل">
-          </div>
-                      
-          <div class="form-group">
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="الايميل">
-          </div>
-
-          <div class="form-group">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="اكتب رسالتك"></textarea>
-          </div>
-          <button type="button" class="btn  btn-block "> ارسلي رسالتك <i class="fas fa-share-square"></i></button>
-        </form>
-
+         <h5 class="mb-3"> للاعلان  او الاستفسار</h5>
+          <form class="form-group">
+              <input type="name" class="form-control my-2" id="exampleFormControlInput1" placeholder="الاسم">
+              <input type="Phone" class="form-control my-2" id="exampleFormControlInput1" placeholder="الموبايل">
+              <input type="email" class="form-control my-2" id="exampleFormControlInput1" placeholder="الايميل">
+              <textarea class="form-control my-2" id="exampleFormControlTextarea1" rows="2" placeholder="اكتب رسالتك"></textarea>
+              <button type="button" class="btn  btn-block "> ارسلي رسالتك <i class="fas fa-share-square"></i></button>
+          </form>
         </div>
   
    </div>  
@@ -679,9 +564,9 @@
 
 
 <footer class="last-section ">
-<div class="container py-1 d-flex justify-content-between">  
+<div class="container py-1 d-flex justify-content-between last-section-content">  
 
-    <div class=" social py-3 text-center">
+    <div class=" social py-3 text-center ">
       <span><a href="#"> <i class="fab fa-facebook-square"></i> </a></span>
       <span><a href="#"> <i class="fab fa-twitter-square"></i> </a></span>
       <span> <a href="#"> <i class="fab fa-instagram"></i> </a></span>
@@ -694,14 +579,10 @@
   </div>
 </div>
 </footer> 
-
 <!-- end last seection -->
-
-  		<!-- start sccroll-top   -->
-
-      <div class="sccroll-top"><i class="fas fa-arrow-alt-circle-up"></i></div>
-		
-      <!-- end sccroll-top   -->
+<!-- start sccroll-top   -->
+ <div class="sccroll-top"><i class="fas fa-arrow-alt-circle-up"></i></div>
+<!-- end sccroll-top   -->
 
     
 

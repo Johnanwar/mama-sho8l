@@ -24,14 +24,14 @@
   else ($(".sccroll-top i").fadeOut(400) )
      });
 
-  //    $(window).scroll( function () {	
-  //     if ($(window). scrollTop () >= 100){
-  //       $(".fixed-nav").addClass('my-fixed-nav')
-  //     }else{
-  //       $(".fixed-nav").removeClass('my-fixed-nav')
-  //     }
+     $(window).scroll( function () {	
+      if ($(window). scrollTop () >= 100){
+        $(".big-nav").addClass('big-nav-fixed')
+      }else{
+        $(".big-nav").removeClass('big-nav-fixed')
+      }
       
-  //        });
+         });
 
 
   //   //  oppups function
@@ -73,7 +73,32 @@
 
   //    }
   //    popups();
+  // show password function
+function showPass(){
+  const input = document.querySelectorAll(".pass-container input");
+  const eye = document.querySelectorAll(".pass-container i");
+  eye.forEach((el)=>{
 
+    el.addEventListener("click", function (e) {
+        e.preventDefault();
+        
+            input.forEach((inp) => {
+            inp.classList.toggle("show")
+
+            if (inp.classList.contains("show")) {
+                inp.setAttribute("type", "text");
+            } else {
+                inp.setAttribute("type", "password");
+            }
+        });
+        
+     
+    });
+});
+
+
+}
+showPass()
 
   //start nav barr function in small screens
 
@@ -95,41 +120,41 @@ navbar()
 
   // staaaartnav barr function show product in nav baaaar
 
-function showCart(){
- const navCart = document.getElementById('nav-cart');
- const cartPopup = document.getElementById('cart');
- const removNavCart = document.getElementById('cart-popup-close');
- navCart.addEventListener('click',(e)=> {
-  cartPopup.classList.toggle("show-cart");
- })
- removNavCart.addEventListener('click',(e)=> {
-  cartPopup.classList.remove("show-cart");
- });
-};
-showCart()
+// function showCart(){
+//  const navCart = document.getElementById('nav-cart');
+//  const cartPopup = document.getElementById('cart');
+//  const removNavCart = document.getElementById('cart-popup-close');
+//  navCart.addEventListener('click',(e)=> {
+//   cartPopup.classList.toggle("show-cart");
+//  })
+//  removNavCart.addEventListener('click',(e)=> {
+//   cartPopup.classList.remove("show-cart");
+//  });
+// };
+// showCart()
   // end nav barr function show product in nav baaaar
 
 
  /* start Counter*/
-function counter(){
-              $(window).scroll(function(){
-                if($(window).scrollTop()>=$("#about").offset().top-200)
-                    {
-                        $('.data').each(function(){
-                        $(this).prop('Counter',0).animate({
-                        Counter:$(this).attr("data-count")
-                        },{
-                        duration:5000,
-                        easing: 'swing',
-                        step: function(now){
-                        $(this).text(Math.ceil(now))
-                    }
-                });
-               });
-              } ;
-             }) ;   
-};
-counter();
+// function counter(){
+//               $(window).scroll(function(){
+//                 if($(window).scrollTop()>=$("#about").offset().top-200)
+//                     {
+//                         $('.data').each(function(){
+//                         $(this).prop('Counter',0).animate({
+//                         Counter:$(this).attr("data-count")
+//                         },{
+//                         duration:5000,
+//                         easing: 'swing',
+//                         step: function(now){
+//                         $(this).text(Math.ceil(now))
+//                     }
+//                 });
+//                });
+//               } ;
+//              }) ;   
+// };
+// counter();
  /* end Counter*/
 
 //  start cart cartPopup

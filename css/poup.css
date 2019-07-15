@@ -91,12 +91,42 @@ h5{
     -ms-transform: skew(20deg);
     -o-transform: skew(20deg);
 }
+.nav-search{
+  position: relative;
+}
+.nav-search input{
+  width: 300px;
+  border-radius: 28px;
+  padding-right: 30px!important;
+}
+.nav-search input::placeholder{
+  padding-right: 20px!important
+}
+.nav-search input:focus{
+  box-shadow: 1px 1px 8px 5px #64266c , 1px 1px 8px 5px #64266c;
+}
+.nav-search i{
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #64266c;
+  z-index: 5px;
+}
 .big-nav {
     height: 80px;
     display: flex;
     align-items: center;  
     background-color: rgba(255,255,255,.1); 
     z-index: 99999999;
+  }
+  .big-nav-fixed{
+    position: fixed;
+    top: 0;
+    right:0;
+    left: 0;
+    background-color:#c95195;
+    box-shadow: 1px 5px 5px #64266c;
   }
   .big-nav li a:hover , .notfication-dropdown i:hover , .producrt-dropdown a:hover{
     color: #64266c !important;
@@ -123,6 +153,9 @@ h5{
     text-decoration: none;
     font-size: 22px;
     position: relative;
+  }
+  .big-nav-links li a i{
+    font-size: 14px; 
   }
   .producrt-dropdown a , .notfication-dropdown a{
    color: #fff!important;
@@ -156,19 +189,21 @@ h5{
   }
   .cart-header {
       color: #fff;
-      border: .5px solid #fff;
-      padding: 5px;
-      border-radius: 5px;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      -ms-border-radius: 5px;
-      -o-border-radius: 5px;
-      cursor: pointer;
       position: relative;
-}
-     .cart-header:hover{
-       background-color: #64266c;
-     }
+  }
+
+  #cart-notfi{
+    position: absolute;
+    color: #fff;
+    top: -4px;
+    background-color:#64266c;
+    padding: 1px 5px;
+    border-radius: 50%;
+    top: -17px;
+    right: -14px; 
+  }
+
+    
   /* end naaaaaaaaaaaaav baaaaaaaaaaaaaaar  */
   /* start cart popup */
   .cart-popup{
@@ -306,14 +341,14 @@ h5{
 
  /* start product section */
 
- #products{
+ /* #products{
   background-color: #c95195;
- }
+ } */
  #products h2 {
-   color: #fff;
+   color: #64266c;
  }
  #products .heading hr{
-   border-color: #fff;
+   border-color: #64266c;
  }
 
 
@@ -422,7 +457,7 @@ h5{
   font-style: italic;
   font-size: 18px;
 }
-.footer-about h5 , .footer-contact h5{
+.footer-about h5 , .footer-contact h5 , .footer-form h5{
   color: #64266c;
   font-size: 35px;
   font-weight: bold;
@@ -555,40 +590,15 @@ h5{
   padding: 2px 5px;
   cursor: pointer;
    animation: mymove 1s linear infinite;
-  -webkit-animation: mymove 1s linear infinite; 
+  -webkit-animation: myscale 1s linear infinite; 
 }
 
 
-@keyframes mymove
-{
-0%,100% {
-     transform:rotate(0);
-     -webkit-transform:rotate(0);
-     -moz-transform:rotate(0);
-     -ms-transform:rotate(0);
-     -o-transform:rotate(0);
-}
 
-25% {
-  transform: rotate(-60deg);
-  -webkit-transform: rotate(-60deg);
-  -moz-transform: rotate(-60deg);
-  -ms-transform: rotate(-60deg);
-  -o-transform: rotate(-60deg);
-}
-
-75% {
-  transform: rotate(60deg);
-  -webkit-transform: rotate(60deg);
-  -moz-transform: rotate(60deg);
-  -ms-transform: rotate(60deg);
-  -o-transform: rotate(60deg);
-}
-}
 /* end fixed cart menu */
 
 /* fixed-contact-form */
-.fixed-contact-form{
+/* .fixed-contact-form{
   position: fixed;
   bottom: 140px;
   right: 50px;
@@ -642,7 +652,7 @@ h5{
   padding: 15px;
   animation: myscale 1s linear infinite;
   -webkit-animation: myscale 1s linear infinite;
-}
+} */
 
 @keyframes myscale
 {
@@ -670,6 +680,70 @@ h5{
   -o-transform: scale(1.1);
 }
 }
+
+/* logon popup */
+.popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color:rgba(51, 51, 51, .6);
+  z-index: 999999999;
+  display: none;
+}
+.login-popup{
+  position: fixed;
+  width: 500px;
+  height:200px;
+  right: 50%;
+  top: 50%;
+  margin-top:-100px;
+  margin-right:-250px;
+  background:linear-gradient(45deg,#64266c,#c95195);
+  border: 1px solid #fff;
+  border-radius:10px;
+  padding: 10px;
+}
+.login-popup .btn {
+  width: 50%;
+  margin-right:25%;
+  background-color: #fff;
+  color: #c95195;
+  border: 1px solid #22e5dc;
+}
+.login-popup .btn:hover {
+  background-color: #64266c;
+  color: #fff;
+  border: 1px solid #22e5dc;
+}
+.login-popup input {
+  background-color: #fff;
+}
+.login-popup input:focus{
+  background:none;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  color: #fff;
+  border-bottom: 1px solid #22e5dc;
+}
+.login-popup input:focus::placeholder{
+  color: #fff;
+}
+.pass-container{
+  position: relative;
+}
+.pass-container i{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #64266c;
+  cursor: pointer;
+}
+/* sign uppoup */
 /* end poups */
 /* staaaaaaaaaaaart articl paaaaaaaaaaaaaaaaaaaagee */
 .right-side{
@@ -716,10 +790,91 @@ h5{
   height: 300px;
 }
 
+/* end article paaaaaaaaaaaaarg */
 
+/* start sign up page   */
+.sign-up{
+  background-image: url(../images/mama-2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+}
 
+.form-sign-up{
+  width: 60%;
+  box-shadow: 2px 2px 3px 3px rgba(201, 81, 149,.7), -2px -2px 3px 3px rgba(201, 81, 149,.7);
+  background-color: rgba(201, 81, 149,.7);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.form-sign-up .form-control{
+  color: #fff;
+}
+.form-sign-up input::placeholder , .form-sign-up textarea::placeholder{
+  color: #fff;
+ }
+.form-sign-up input , .form-sign-up textarea{
+ background-color: rgba(201, 81, 149,.1);
+ border: none;
+ border: 1px solid #fff;
+}
+.form-sign-up input:focus , .form-sign-up textarea:focus{
+ background-color: rgba(201, 81, 149,.1);;
+ outline: none;
+ box-shadow: none;
+ border: none;
+ border-bottom: 1px solid #fff;
+ border-right: 1px solid #fff;
 
+ color: #fff;
+}
+ .form-sign-up button{
+   background: linear-gradient(45deg, #64266c ,#c95195);
+   width: 200px;
+   height: 50px;
+   color: #fff;
+   font-size: 25px;
+   padding: 5px;
+   border-radius: 5px ;
+   -webkit-border-radius: 5px ;
+   -moz-border-radius: 5px ;
+   -ms-border-radius: 5px ;
+   -o-border-radius: 5px ;
+   border: .5px solid #fff;
+}
+.form-sign-up button:hover{
+  box-shadow: 2px 2px 3px 3px #fff, -2px -2px 3px 3px #fff;
+}
+.work .work-label , .work2 .work-label{
+  font-size: 24px;
+}
+.form-check label{
+  margin-right: 10px;
+}
+.work input, .work2 input{
+  background-color: #64266c;
+  height: 20px;
+  width: 20px;
+  -webkit-appearance: none;
+  position: relative;
+}
 
+input[type=radio]:checked::before {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  content: "✔";
+  display: inline-block;
+  font-size: 18px;
+  text-align: center;
+  line-height: 20px;
+  background-color: #fff;
+  color: #64266c;
+}
 
 
 
@@ -760,19 +915,30 @@ h5{
       top: 50%;
       transform: translate(-5%, -50%);
       z-index: 2;
+      -webkit-transform: translate(-5%, -50%);
+      -moz-transform: translate(-5%, -50%);
+      -ms-transform: translate(-5%, -50%);
+      -o-transform: translate(-5%, -50%);
+}
+    .nav-search{
+      display: none;
     }
   
     .big-nav-links {
       position: fixed;
       background: #64266c;
-      height: 100vh;
+      height: 400px;
       width: 100%;
       flex-direction: column;
-      clip-path: circle(100px at 90% -10%);
-      -webkit-clip-path: circle(100px at 90% -10%);
+      clip-path: circle(100px at 95% -13%);
+      -webkit-clip-path:circle(100px at 95% -13%)
       transition: all 1s ease-out;
       pointer-events: none;
     }
+    .big-nav li a:hover, .notfication-dropdown i:hover, .producrt-dropdown a:hover {
+      color: #fff !important;
+      font-weight: bold;
+  }
     .big-nav-links.open {
       clip-path: circle(1000px at 90% -10%);
       -webkit-clip-path: circle(1000px at 90% -10%);
@@ -796,6 +962,22 @@ h5{
     }
     .big-nav-links li.fade {
       opacity: 1;
+    }
+    .form-sign-up{
+      width: 100%;
+    }
+    .last-section-content{
+      flex-direction: column !important ;
+    }
+    .copyright p{
+      text-align: center;
+    }
+ 
+  }
+  @media screen and (max-width: 568px) {
+    .login-popup{
+      width: 300px;
+      margin-right: -150px;
     }
   }
   

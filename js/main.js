@@ -1,37 +1,30 @@
-// nav baaar 
-
-// const hamburger = document.querySelector(".hamburger");
-// const navLinks = document.querySelector(".nav-hash");
-// const links = document.querySelectorAll(".nav-hash li");
-
-// hamburger.addEventListener("click", () => {
-//   navLinks.classList.toggle("open");
-//   links.forEach(link => {
-//     link.classList.toggle("fade");
-//   });
-// });
-
-// end nav baaaaaar
+$('.main-btn').click(function(){
+  $(this).closest('.social-btn').toggleClass('open');
+});
 
 
   //  scroll button
-
-  $(".sccroll-top i").click (function() {
-    $("html , body").animate({ scrollTop: 0	},1000)	});  
+  function scrollAndAnimate(){
+    $(".sccroll-top i").click (function() {
+      $("html , body").animate({ scrollTop: 0	},1000)	});  
+    
+    $(window).scroll( function () {	
+    if ($(window). scrollTop () >= 600){$(".sccroll-top i").fadeIn(400)}
+    else ($(".sccroll-top i").fadeOut(400) )
+       });
   
-  $(window).scroll( function () {	
-  if ($(window). scrollTop () >= 600){$(".sccroll-top i").fadeIn(400)}
-  else ($(".sccroll-top i").fadeOut(400) )
-     });
+       $(window).scroll( function () {	
+        if ($(window). scrollTop () >= 100){
+          $(".big-nav").addClass('big-nav-fixed')
+        }else{
+          $(".big-nav").removeClass('big-nav-fixed')
+        }
+        
+           });
+  }
+  scrollAndAnimate()
 
-     $(window).scroll( function () {	
-      if ($(window). scrollTop () >= 100){
-        $(".big-nav").addClass('big-nav-fixed')
-      }else{
-        $(".big-nav").removeClass('big-nav-fixed')
-      }
-      
-         });
+
 
 
   //   //  oppups function
@@ -174,32 +167,37 @@ fixedCart();
 //  end cart cartPopup
 
 //  start  form contact popup;
-function fixedForm(){
-  const formIcon = document.querySelector(".contact-fixed-icon");
-  const formContainer = document.querySelector(".fixed-contact-form");
-  formIcon.addEventListener('click',()=> {
-    formContainer.classList.toggle('show-form')
-    if(formContainer.classList.contains('show-form')){
-      formIcon.innerHTML = `<i class="fas fa-times-circle"></i>`
-    }else{
-      formIcon.innerHTML = `<i class="far fa-envelope"></i>`
-    }
-  })
 
-}
-fixedForm()
 
 //  end form contact popup;
 
 // article right side function
  function rightSide(){
-  $(".right-side-header h5").click(function(){
-    console.log($(this).siblings())
-    $(this).siblings().toggleClass("hideUl")
-
+  $(".right-side-header .d-flex ").click(function(){
+    $(this).siblings().toggleClass("hideUl");
+    
+    
+    if($(this).siblings().hasClass("hideUl")){
+      $(this).children()[1].innerHTML=`<i class="fas fa-sort-down"></i>`
+    }else{
+      $(this).children()[1].innerHTML=`<i class="fas fa-sort-up"></i>`
+    }
   })
 
 };
 rightSide();
+ function like(){
+ const likeIcon = document.querySelector('.article-like .fa-thumbs-up')
+ const disLikeIcon = document.querySelector('.article-like .fa-thumbs-down')
+ var likeNumber = document.querySelector('#like-number')
+ var disLikeNumber = document.querySelector('#dislike-number')
+ likeIcon.addEventListener('click',()=>{
+  likeNumber.textContent  ++
+ })
+ disLikeIcon.addEventListener('click',()=>{
+  disLikeNumber.textContent  ++
+ })
 
+ };
+ like();
 

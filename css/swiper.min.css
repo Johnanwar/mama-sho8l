@@ -68,3 +68,39 @@
 .swiper-pagination-bullet-active {
   background: #64266c;
 }
+.swiper-slide{
+  position: relative;
+}
+.swiper-slide:hover .product-overlay{
+  display: block;
+}
+.product-overlay{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(201, 81, 149,.9);
+  display: none;
+}
+.product-overlay span i{
+  font-size: 25px;
+  cursor: pointer;
+  color: #fff;
+  /* text-shadow: 1px 1px 3px #fff; */
+}
+.product-overlay span i:hover , .product-overlay-cart:hover i{
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.product-overlay .product-overlay-cart{
+  background: linear-gradient(to left, #64266c, #22e5dc ,#64266c ) ;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}

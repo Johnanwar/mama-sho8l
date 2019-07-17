@@ -956,7 +956,81 @@ input[type=radio]:checked::before {
   -o-border-radius: 50%;
 }
 
+/* end profile paaaaaaage */
 
+/* start preview pag */
+.preview-images{
+  /* background-color: #22e5dc; */
+  box-shadow: 1px 2px 3px 3px #c95195, -1px -2px 3px 3px #c95195;
+  /* background: linear-gradient(to left, #eee, #c95195 ,#eee )  */
+}
+.preview-images{
+  border: 1px solid #64266c;
+}
+.preview-images .big-img{
+  width: 100%;
+  height: 300px;
+}
+.previe-small-img{
+  border: 1px solid #64266c;
+}
+.previe-small-img img{
+  height: 80px;
+  width: 32.3333%;
+  border-right: 4px solid #64266c;
+  cursor: pointer;
+}
+.preview-content h5{
+  color: #fff;
+  background: linear-gradient(45deg,#64266c,#c95195 ) ;
+  width: 30%;
+  font-size: 33px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+}
+.preview-content p{
+  font-size: 18px;
+  font-style: italic;
+}
+prevew-content-quantity{
+  font-size: 18px;
+}
+.prevew-content-quantity button{
+  color: #fff;
+  background-color: #64266c;
+  height: 37px;
+}
+.prevew-content-quantity input{
+  color: #fff;
+  background: linear-gradient(90deg,#64266c,#c95195 );
+  height: 37px;
+  min-width: 30px;
+  max-width: 40px;
+}
+.prevew-content-quantity .input-group{
+ width: 60%;
+}
+.preview-content .btn:focus , .preview-content input:focus{
+  box-shadow: none;
+  outline: none;
+}
+.preview-content .btn{
+  background-color: #64266c;
+  color: #fff;
+  font-size: 18px;
+}
+.preview-content .btn:hover{
+  background-color: #c95195;
+}
+/* #preview{
+  background-color: #ccc
+} */
+
+/* end preview pag */
+/* start main caaaaaaaart paaaaaaaaaage */
+
+/* end main caaaaaaaart paaaaaaaaaage */
 
 
 
@@ -988,14 +1062,17 @@ input[type=radio]:checked::before {
       position: absolute;
       cursor: pointer;
       right: 5%;
-      top: 50%;
+      top: 5%;
       transform: translate(-5%, -50%);
-      z-index: 2;
       -webkit-transform: translate(-5%, -50%);
       -moz-transform: translate(-5%, -50%);
       -ms-transform: translate(-5%, -50%);
       -o-transform: translate(-5%, -50%);
-}
+      z-index: 99999999;
+    }
+    .big-nav-fixed .hamburger{
+      top: 35%;
+    }
     .nav-search{
       display: none;
     }
@@ -1003,13 +1080,13 @@ input[type=radio]:checked::before {
     .big-nav-links {
       position: fixed;
       background: #64266c;
-      height: 400px;
+      min-height: 400px;
       width: 100%;
       flex-direction: column;
-      clip-path: circle(100px at 95% -13%);
-      -webkit-clip-path:circle(100px at 95% -13%)
+      -webkit-clip-path: circle(100px at 105% -13%);
       transition: all 1s ease-out;
       pointer-events: none;
+      z-index: 9999;
     }
     .big-nav li a:hover, .notfication-dropdown i:hover, .producrt-dropdown a:hover {
       color: #fff !important;

@@ -1,7 +1,3 @@
-$('.main-btn').click(function(){
-  $(this).closest('.social-btn').toggleClass('open');
-});
-
 
   //  scroll button
   function scrollAndAnimate(){
@@ -191,13 +187,57 @@ rightSide();
  const disLikeIcon = document.querySelector('.article-like .fa-thumbs-down')
  var likeNumber = document.querySelector('#like-number')
  var disLikeNumber = document.querySelector('#dislike-number')
- likeIcon.addEventListener('click',()=>{
-  likeNumber.textContent  ++
- })
- disLikeIcon.addEventListener('click',()=>{
-  disLikeNumber.textContent  ++
- })
+ if(likeIcon !==null){
+  likeIcon.addEventListener('click',()=>{
+    likeNumber.textContent  ++
+   })
+ }
+ if(disLikeIcon !==null){
+  disLikeIcon.addEventListener('click',()=>{
+    disLikeNumber.textContent  ++
+   })
+ }
+ 
 
  };
  like();
+ // product quantity function 
+ function quantityControl(){
+  const min = document.querySelector('#min');
+  const max = document.querySelector('#max');
+  const quantityValue = document.querySelector('#quantity-value');
+  const disable = function(){
+    if(quantityValue.value > 1){
+      min.removeAttribute("disabled");
+    }
+    else{
+      min.setAttribute("disabled",false);
+    }
+  }
+  disable();
+
+  
+  min.addEventListener('click',()=>{
+    quantityValue.value--;
+    disable();
+  })
+
+  max.addEventListener('click',()=>{
+    quantityValue.value ++;
+    disable();
+  })
+ }
+ quantityControl()
+
+ // view images function in review page 
+ function reviewImg(){
+
+   $(".small-img").click( function (){
+    var imgSrc =  $(this).attr("src");
+    console.log(imgSrc)
+    $(".big-img").attr ("src" , imgSrc);
+  } )
+
+ };
+ reviewImg();
 

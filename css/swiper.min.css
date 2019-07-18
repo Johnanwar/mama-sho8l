@@ -45,7 +45,7 @@
  border: 1px solid #64266c;
 }
 .product-card-content{
-  background:linear-gradient(45deg,#64266c,#c95195);
+  background-color: #c95195;
   color: #fff
 }
 .product-card-content h5{

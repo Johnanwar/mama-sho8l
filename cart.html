@@ -88,15 +88,153 @@
  <!--eeeeeeeeeend naaaaaaaaaaaaav baaaaaaaaaaaaaar -->
 
  <!-- start preview swction -->
- <section id="main-cart">
+       <section class=" main-cart py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <div class="cart-right main-color mb-2 px-3">
+                <h5 class="text-center second-color pt-4 font-weight-bold">
+                    ملخص الطلب
+                </h5>
+                <hr>
+                <div class="d-flex justify-content-between">
+                  <p>الاجمالي</p>
+                  <p id="">500</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p>الخصم</p>
+                    <p id="">0</p>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-between">
+                      <p>اجمالي العمليه</p>
+                      <p id="">5000</p>
+                    </div>
+                    <button class="btn  my-2"> متابعه عمليه الشراء </button>
+              </div>
+            </div>
+            <div class="col-md-9 col-12">
+                <table class="table product-table table-responsiv table-striped table-bordered table-hover pendind-table text-center mb-0">
+                    <thead class=" head-table">
+                        <tr>
+                        <th> العنصر  </th>
+                        <th> السعر</th>
+                        <th> الكميه </th>
+                        <th>  الاجمالي</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+          
+                      <tr>
+                          <td  class="el-name">
+                            <div class="d-flex">
+                                <a> <img class="img-fluid mr-2 img-responsive" src="./images/product-5.png" alt=""> </a> 
+                                <p> اسم العنصر</p> 
+                            </div>
+                            
+                           </td>
+                          <td class="el-price"> 
+                            <div class=" font-weight-bold"><span class="mr-2" id="price">200</span>  جنيه مصري </div>
+                          </td>
+                          <td class="el-quantity">
+                              <div class="input-group">
+                                  <button  id="min" class="btn btn-defualt ml-4" type="button">-</button>					
+                                   <input id="quantity-value" type="text" readonly="" name="quantity" value="1" min="1" max="399" class="form-control ">						
+                                  <button  id="max" class="btn btn-defualt" type="button">+</button>						   						
+                                 </div>
+                          </td>
+                          <td class="el-total"> 
+                            <div class="d-flex justify-content-between">
+                              <div><span>200</span> جنيه مصري</div>
+                              <div>
+                                 <span><i class="fas fa-edit"></i></span> 
+                                 <span><i class="fas fa-trash"></i></span> </div>
+                                 <!-- <span class="edit">تعديل</span>
+                                 <span class="del">حذف</span> -->
+                            </div>
+                         </td>
+                      </tr>
+
+                      <tr>
+                          <td  class="el-name">
+                            <div class="d-flex">
+                                <a> <img class="img-fluid mr-2 img-responsive" src="./images/product-1.png" alt=""> </a> 
+                                <p> اسم العنصر</p> 
+                            </div>
+                            
+                           </td>
+                          <td class="el-price"> 
+                            <div class=" font-weight-bold"><span class="mr-2" id="price">200</span>  جنيه مصري </div>
+                          </td>
+                          <td class="el-quantity">
+                              <div class="input-group">
+                                  <button  id="min" class="btn btn-defualt ml-4" type="button">-</button>					
+                                   <input id="quantity-value" type="text" readonly="" name="quantity" value="1" min="1" max="399" class="form-control ">						
+                                  <button  id="max" class="btn btn-defualt" type="button">+</button>						   						
+                                 </div>
+                          </td>
+                          <td class="el-total"> 
+                            <div class="d-flex justify-content-between">
+                              <div><span>200</span> جنيه مصري</div>
+                              <div>
+                                 <span><i class="fas fa-edit"></i></span> 
+                                 <span><i class="fas fa-trash"></i></span> </div>
+                                 <!-- <span class="edit">تعديل</span>
+                                 <span class="del">حذف</span> -->
+                            </div>
+                         </td>
+                      </tr>
+
+                      <tr>
+                          <td  class="el-name">
+                            <div class="d-flex">
+                                <a> <img class="img-fluid mr-2 img-responsive" src="./images/product-2.png" alt=""> </a> 
+                                <p> اسم العنصر</p> 
+                            </div>
+                            
+                           </td>
+                          <td class="el-price"> 
+                            <div class=" font-weight-bold"><span class="mr-2" id="price">200</span>  جنيه مصري </div>
+                          </td>
+                          <td class="el-quantity">
+                              <div class="input-group">
+                                  <button  id="min" class="btn btn-defualt ml-4" type="button">-</button>					
+                                   <input id="quantity-value" type="text" readonly="" name="quantity" value="1" min="1" max="399" class="form-control ">						
+                                  <button  id="max" class="btn btn-defualt" type="button">+</button>						   						
+                                 </div>
+                          </td>
+                          <td class="el-total"> 
+                            <div class="d-flex justify-content-between">
+                              <div><span>200</span> جنيه مصري</div>
+                              <div>
+                                 <span><i class="fas fa-edit"></i></span> 
+                                 <span><i class="fas fa-trash"></i></span> </div>
+                                 <!-- <span class="edit">تعديل</span>
+                                 <span class="del">حذف</span> -->
+                            </div>
+                         </td>
+                      </tr>
+
+          
+               
+          
+                    </tbody>
+          
+            
+                    </tfoot> 
+                  </table>
+            </div>
+          </div>
+        </div>
+      </section>
     
- </section>
- <!-- endd preview swction -->
+        <!-- end table -->
+  
 
 <!-- ------------------------/* stat footer */*------------>
 <footer class="contact-container">
         <div class="container">
-          <div class="row mt-4  contact-doupple">
+          <div class="row pt-4  contact-doupple">
           
             <div class="col-md-4 footer-about my-2">
             

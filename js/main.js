@@ -19,6 +19,21 @@
            });
   }
   scrollAndAnimate()
+  // alertrt
+ function myAlert(){
+    $(".cart-alert").animate({right: "100px"})
+    $(".cart-alert").delay(2000);
+   $(".cart-alert").animate({right:'-230px'},700);
+ };
+
+  // cart alert
+  function cartAlert(){
+  $('.product-card-container-overlay .fa-shopping-cart').click(function(e){
+    e.preventDefault();
+    myAlert();
+  })
+  }
+  cartAlert()
 
 
 
@@ -107,45 +122,6 @@ navbar()
   // enfd nav barr function in small screens
 
 
-  // staaaartnav barr function show product in nav baaaar
-
-// function showCart(){
-//  const navCart = document.getElementById('nav-cart');
-//  const cartPopup = document.getElementById('cart');
-//  const removNavCart = document.getElementById('cart-popup-close');
-//  navCart.addEventListener('click',(e)=> {
-//   cartPopup.classList.toggle("show-cart");
-//  })
-//  removNavCart.addEventListener('click',(e)=> {
-//   cartPopup.classList.remove("show-cart");
-//  });
-// };
-// showCart()
-  // end nav barr function show product in nav baaaar
-
-
- /* start Counter*/
-// function counter(){
-//               $(window).scroll(function(){
-//                 if($(window).scrollTop()>=$("#about").offset().top-200)
-//                     {
-//                         $('.data').each(function(){
-//                         $(this).prop('Counter',0).animate({
-//                         Counter:$(this).attr("data-count")
-//                         },{
-//                         duration:5000,
-//                         easing: 'swing',
-//                         step: function(now){
-//                         $(this).text(Math.ceil(now))
-//                     }
-//                 });
-//                });
-//               } ;
-//              }) ;   
-// };
-// counter();
- /* end Counter*/
-
 //  start cart cartPopup
 function fixedCart(){
   const icon = document.querySelector("#poup-cart-icon i");
@@ -207,7 +183,8 @@ rightSide();
   const max = document.querySelector('#max');
   const quantityValue = document.querySelector('#quantity-value');
   const disable = function(){
-    if(quantityValue.value > 1){
+
+    if(quantityValue.value ){
       min.removeAttribute("disabled");
     }
     else{

@@ -5,7 +5,7 @@
       $("html , body").animate({ scrollTop: 0	},1000)	});  
     
     $(window).scroll( function () {	
-    if ($(window). scrollTop () >= 600){$(".sccroll-top i").fadeIn(400)}
+    if ($(window). scrollTop () >= 100){$(".sccroll-top i").fadeIn(400)}
     else ($(".sccroll-top i").fadeOut(400) )
        });
   

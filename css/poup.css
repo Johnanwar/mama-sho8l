@@ -27,7 +27,34 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 600px;
+    position: relative;
 }
+.hom-img {
+ position: absolute;
+  left: 10px;
+ top: 200px;
+}
+.img-sign , .img-up{
+  position: absolute;
+  top: 164px;
+  right: 84px;
+  font-size: 68px;
+  color: transparent;
+}
+.img-up{
+  top: 90px;
+  right: 119px;
+  font-size: 80px;
+}
+.img-sign:hover ,.img-up:hover{
+  color: transparent;
+}
+.hom-img img{
+
+  width: 302px;
+  height: 300px;
+ }
+
 /* a{
   color: #c95195;
 } */

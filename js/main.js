@@ -119,8 +119,15 @@ function navbar(){
   });
 };
 navbar()
-  // enfd nav barr function in small screens
-
+  // end nav barr function in small screens
+//  search function in nav baaaaaaaaaaaaar
+function searchNav(){
+  $('.search-small').click(function(){
+    $('.nav-search').toggleClass('showserch');
+    $('.closesearch').toggleClass('showserch');
+  })
+}
+searchNav();
 
 //  start cart cartPopup
 function fixedCart(){

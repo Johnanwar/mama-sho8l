@@ -14,12 +14,14 @@
 .swiper-container-rtl .swiper-button-prev, .swiper-container-rtl .swiper-button-next  {
   background-image: none;
   outline: none;
+  position: absolute;
+  top: 25px;
 }
 
 
 .swiper-button-next i , .swiper-button-prev i{
  font-size: 18px;
- color: #22e5dc!important;
+ color: #ffff!important;
  background-color: #64266c;
  padding: 5px;
  border-radius: 5px;;
@@ -33,42 +35,17 @@
  color: #64266c!important;
  background-color: #22e5dc;
 }
-.product-card img{
-  height: 250px;
-  width: 100%;
-  background-color: #fff;
-}
-
-.product-card{
- border: 1px solid #ccc;
-}
-.product-card-content{
-  background-color: #c95195;
-  color: #fff
-}
-.product-card-content h5{
-  font-size: 25px;
-  font-weight: bold;
-}
-.product-card-content p{
-  font-size: 20px;
-}
-.product-card-content h5 i{
-  background-color: #fff;
-  color: #c95195;
-  padding: 6px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
 .swiper-pagination-bullet-active {
   background: #64266c;
 }
 .swiper-slide{
   position: relative;
 }
-.swiper-slide:hover .product-card-container-overlay{
-  display: block;
+.product-card-content{
+  background-color: #c95195!important;
+  color: #fff !important;
+}
+.product-card-content .btn , .product-card-content a , .product-card-content i , .product-card-content .slide-cart {
+  background-color: #f7f7f7!important;
+  color: #c95195!important;
 }

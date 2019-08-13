@@ -28,13 +28,20 @@
 
   // cart alert
   function cartAlert(){
-  $('.product-card-container-overlay .fa-shopping-cart').click(function(e){
-    e.preventDefault();
+  $('.addToCart').click(function(){
     myAlert();
   })
   }
   cartAlert()
-
+  // end cart alert
+  // love product function
+  function loveProduct (){
+    $('.product-love ').click(function(){
+      this.innerHTML = `<i class="fas fa-heart love"></i>`
+      console.log(this.innerHTML)
+    })
+  }
+  loveProduct ();
 
 
 

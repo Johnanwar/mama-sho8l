@@ -42,10 +42,16 @@
   position: relative;
 }
 .product-card-content{
-  background-color: #c95195!important;
-  color: #fff !important;
+  background-color: #f7f7f7!important;
+  color: #64266c !important;
+  box-shadow: 1px 1px 2px #ccc, -1px -1px 2px #ccc;
 }
 .product-card-content .btn , .product-card-content a , .product-card-content i , .product-card-content .slide-cart {
-  background-color: #f7f7f7!important;
+  background-color: #fff!important;
   color: #c95195!important;
+}
+.product-card-content .btn{
+  background-color: #fff;
+  color: #c95195;
+  border: 1px solid #c95195;
 }

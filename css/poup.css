@@ -1298,7 +1298,9 @@ prevew-content-quantity{
 .product-main-content{
   color: #64266c;
   background-color: #fff;
-  padding:10px 5px
+  padding:10px 5px;
+  box-shadow: 1px 1px 2px #ccc, -1px -1px 2px #ccc;
+  border-radius: 0 0 5px 5px;
 }
 .product-main-content h5{
   position: relative;
@@ -1396,6 +1398,7 @@ prevew-content-quantity{
   -moz-border-radius: 11px;
   -ms-border-radius: 11px;
   -o-border-radius: 11px;
+  box-shadow: 1px 1px 2px #ccc, -1px -1px 2px #ccc;
 }
 .product-slider .carousel-inner img{
   height: 200px;

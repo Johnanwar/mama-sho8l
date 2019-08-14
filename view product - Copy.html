@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mama Fe El Shoghl</title>
     <link rel="stylesheet" href="css/all.min.css" />
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.css" />
     <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/poup.css" />
-  
+ 
+
+
 </head>
 <body>
 
@@ -119,29 +121,41 @@
              <div class="col-md-5 mb-3">
 
                  <div  class="preview-images ">
-                   <img id="img_01" src="./images/bc-2.jpg" data-zoom-image ="./images/bc-2.jpg" class="mgtest img-responsive img-fluid big-img big-img2 "/>
-                  
-                   <div id="gallery_01" class="previe-small-img d-flex justify-content-between mt-3">
+                   <!-- <img src="./images/shirt-1.jpg "alt="" class="img-responsive img-fluid big-img "> -->
+                   <img id="zoom_01" src="./images/shirt-1.jpg " data-zoom-image ="./images/shirt-1.jpg" class="img-responsive img-fluid big-img "/>
+                   <div class="previe-small-img d-flex justify-content-between">
+                   <img src="./images//shirt-1.jpg"  class=" img-responsive img-fluid small-img">
+                   <img src="./images/shirt-0.jpg"  class=" img-responsive img-fluid small-img">
+                   <img src="./images/shirt-2.jpg" alt="" class=" img-responsive img-fluid small-img">
 
-                   <a  href="#" data-image="./images/bc-1.jpg" data-zoom-image="./images/bc-1.jpg" class="behiend-img" >
-                    <img id="img_01" src="./images/bc-1.jpg" class="mgtest small-img " />
-                  </a>
-
-                  <a  href="#" data-image="./images/bc-2.jpg" data-zoom-image="./images/bc-2.jpg" class="behiend-img">
-                    <img id="img_01" src="./images/bc-2.jpg" class="mgtest small-img" />
-                  </a>
-
-                  <a href="#" data-image="./images/bc-3.jpg" data-zoom-image="./images/bc-3.jpg" class="behiend-img">
-                    <img id="img_01" src="./images/bc-3.jpg" class="mgtest small-img" />
-                  </a>
-                  
-
-                   
                    </div>
                  </div>
-                 
-              </div> 
-    
+                 <!-- <div class="bzoom_wrap">
+                    <ul id="bzoom">
+                        <li>
+                            <img class="bzoom_thumb_image" src="./images/shirt-1.jpg " title="first img" />
+                            <img class="bzoom_big_image" src="./images/shirt-1.jpg "/>
+                        </li>
+                        <li>
+                            <img class="bzoom_thumb_image" src="./images//shirt-1.jpg"/>
+                            <img class="bzoom_big_image" src="https://unsplash.it/750/1000?image=203"/>
+                        </li>
+                        <li>
+                            <img class="bzoom_thumb_image" src="https://unsplash.it/375/500?image=212"/>
+                            <img class="bzoom_big_image" src="https://unsplash.it/750/1000?image=212"/>
+                        </li>
+                        <li>
+                            <img class="bzoom_thumb_image" src="https://unsplash.it/375/500?image=220"/>
+                            <img class="bzoom_big_image" src="https://unsplash.it/750/1000?image=220"/>
+                        </li>
+                        <li>
+                            <img class="bzoom_thumb_image" src="https://unsplash.it/375/500?image=223"/>
+                            <img class="bzoom_big_image" src="https://unsplash.it/750/1000?image=223"/>
+                        </li>
+                    </ul>
+                </div> -->
+
+             </div>
              <div class="col-md-7 ">
                  <div class="preview-content">
                      <h5>اسم المنتج </h5>
@@ -157,12 +171,7 @@
                             </div>
                          <div class=" font-weight-bold"><span class="second-color mr-3" id="price">200</span>  جنيه مصري</div>
                      </div>
-                     <!-- <select id="inputState" class=" form-control my-2 w-25" tabindex="-1" aria-hidden="true">
-                        <option selected> اختار لون    </option>
-                        <option value="1"> احمر </option>
-                        <option value="2"> ازرق </option>
-                        <option value="3">اصفر </option>
-                    </select> -->
+       
                   </div>
                      <button class="btn my-3"> اضافه ال السله </button>
 
@@ -517,30 +526,9 @@
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="./js/swiper.min.js"></script>
-        <!-- <script src='./js/jqzoom.js'></script> -->
-
-        <script src="./js/jquery.elevatezoom.js"></script>
+        <script src='./js/jquery.elevatezoom.js'></script>
         <script src="js/main.js"></script>
-        <script>
-        $("#img_01").elevateZoom({gallery:'gallery_01',
-         cursor: 'pointer',
-          galleryActiveClass: 'active',
-          imageCrossfade: false, 
-          zoomType:'lens',
-          lensShape:"round",
-          lensSize:200,
-       }); 
-
-        //pass the images to Fancybox
-        $(".mgtest").bind("click", function(e) {  
-          var ez =   $('.mgtest').data('elevateZoom');	
-          $.fancybox(ez.getGalleryList());
-          return false;
-        });
-        </script>
-      
-        
-      
+ 
     </body>
     </html>
         

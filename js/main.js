@@ -1,9 +1,6 @@
-$("#bzoom").zoom({
-	zoom_area_width: 300,
-    autoplay_interval :3000,
-    small_thumbs : 4,
-    autoplay : false
-});
+
+
+  
   //  scroll button
   function scrollAndAnimate(){
     $(".sccroll-top i").click (function() {
@@ -230,10 +227,13 @@ rightSide();
 
    $(".small-img").click( function (){
     var imgSrc =  $(this).attr("src");
-    console.log(imgSrc)
+    console.log( $(".big-img").attr('data-zoom-image'))
     $(".big-img").attr ("src" , imgSrc);
+    $(".big-img").attr ("data-zoom-image" , imgSrc);
+    
+   
   } )
 
  };
- reviewImg();
+
 

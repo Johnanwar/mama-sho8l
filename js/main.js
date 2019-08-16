@@ -220,7 +220,7 @@ rightSide();
     disable();
   })
  }
- quantityControl()
+//  quantityControl()
 
  // view images function in review page 
  function reviewImg(){
@@ -235,5 +235,17 @@ rightSide();
   } )
 
  };
+
+
+//  paginaaaaaaaaaaaaation function
+function pagination(){
+  $('.pagination-btn').click(function(){
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+    
+  })
+};
+pagination()
+ 
 
 

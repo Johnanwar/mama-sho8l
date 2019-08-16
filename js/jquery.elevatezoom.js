@@ -1788,3 +1788,23 @@ if ( typeof Object.create !== 'function' ) {
 	};
 
 })( jQuery, window, document );
+function zoomproduct(){
+	$("#img_01").elevateZoom({gallery:'gallery_01',
+	cursor: 'pointer',
+	 galleryActiveClass: 'active',
+	 imageCrossfade: false, 
+	 zoomType:'lens',
+	 lensShape:"round",
+	 lensSize:300,	
+	 responsive:true,
+	 easing:true,
+   }); 
+   
+   //pass the images to Fancybox
+   $(".mgtest").bind("click", function(e) {  
+	 var ez =   $('.mgtest').data('elevateZoom');	
+	 $.fancybox(ez.getGalleryList());
+	 return false;
+   });
+   };
+   zoomproduct();

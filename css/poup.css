@@ -47,7 +47,7 @@
 .img-sign:hover ,.img-up:hover{
   color: transparent;
 }
-.btn:focus{
+.btn:focus , .form-control:focus{
   outline: none;
   box-shadow: none;
  }
@@ -894,33 +894,88 @@ a:hover {
 }
 .articl-fullpage i{
   color: #fff;
-  background-color: #64266c;
+  background-color: #22e5dc;
   padding: 5px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
 }
 .articl-fullpage i:hover{
   transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
+  -webkit-transform:;
+  -moz-transform:;
+  -ms-transform:;
+  -o-transform:;
 }
 .article-share .social-btn-list i , .article-like i{
   font-size: 16px;
   padding: 10px;
   cursor: pointer;
 }
-.article-share .social-btn-list i:hover , .article-like i:hover{
-  box-shadow: 1px 1px 4px 2px #c95195;
-}
+
 .article-like span{
   color: #64266c;
   font-size: 18px;
-  text-shadow: 1px 1px 4px  #c95195;
+}
+.comment-content img{
+  width: 40px;
+  height: 40px;
+}
+.comment-content a{
+  color: #68286e;
+}
+.comments{
+  position: relative;
+}
+.comment-header::after{
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 62px;
+  background-color: #ccc;
+  height: 1px;
+  width: 90%;
+
+}
+.comment-words{
+  background-color: #f7f7f7;
+  padding: 5px 10px;
+  margin-right: 10px;
+  position: relative;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.comment-words::before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: #f7f7f7;
+  transform: rotate(45deg);
+}
+.comment-date {
+  font-size: 14px;
+  color: #ccc;
+}
+.comment-words .form-control{
+  background-color: #f7f7f7;
+  border:none;
+  border-bottom: 1px solid #ccc;
+}
+.sign-link{
+  font-size: 18px;
 }
 /* end article paaaaaaaaaaaaarg */
 
@@ -1977,6 +2032,9 @@ right: 12px;
     .pagination {
       width: 70%
     }
+    .preview-images{
+      overflow: hidden;
+    }
  
   }
   @media screen and (max-width: 568px) {
@@ -2006,5 +2064,10 @@ right: 12px;
    .product-table td{
      font-size: 18px !important;
    }
+   /* end responsive table */
+   .article-share .social-btn-list i, .article-like i {
+    font-size: 15px;
+    padding: 8px;
+    }
   }
   

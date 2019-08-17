@@ -246,6 +246,55 @@ function pagination(){
   })
 };
 pagination()
+// end paginaaaaaaaaaaaation
+
+// news page taps function
+function newsTaps(){
+  
+document.querySelectorAll(".news-btn").forEach((el) => {
+  el.addEventListener("click", function(){
+
+    var conent =  this.getAttribute("data-value")
+    var x = "." + "content" +conent
+    var y = document.querySelector("" + x)
+    // y.classList.toggle("active")
+    $(y).siblings().removeClass("active")
+    $(y).siblings().css({ "display": "none" });
+    y.style.display = "block";
+    $(this).addClass("active-btn");
+    $(this).siblings().removeClass("active-btn");
+
+
+    // if (y.classList.contains("active")){
+    //   y.style.display ="block"
+    // }else {
+    //   y.style.display = "none"
+    // }
+  })
+  
+});
+};
+newsTaps();
+// services function
+function service(){
+  document.querySelectorAll(".servise-btn").forEach((el) => {
+    el.addEventListener("click", function(){
+  
+      var conent =  this.getAttribute("data-value")
+      var x = "." + "servise" +conent
+      var y = document.querySelector("" + x)
+      $(y).siblings().css({ "display": "none" });
+      y.style.display = "block";
+      // $(this).addClass("active-btn");
+      // $(this).siblings().removeClass("active-btn");
+    })
+    
+  });
+
+}
+service();
+
+
  
 
 

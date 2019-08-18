@@ -285,8 +285,8 @@ function service(){
       var y = document.querySelector("" + x)
       $(y).siblings().css({ "display": "none" });
       y.style.display = "block";
-      // $(this).addClass("active-btn");
-      // $(this).siblings().removeClass("active-btn");
+      $(this).addClass("active-servise");
+      $(this).siblings().removeClass("active-servise");
     })
     
   });

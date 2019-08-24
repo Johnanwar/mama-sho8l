@@ -1,6 +1,15 @@
 
+// spnner function
+  function spiner(){
+    $(".loading-screen").fadeOut(1000 , function(){ $("body").css("overflow","auto") });
 
-  
+}
+window.addEventListener('load',function(){
+    spiner()
+
+})
+// spnner function
+
   //  scroll button
   function scrollAndAnimate(){
     $(".sccroll-top i").click (function() {
@@ -39,8 +48,12 @@
   // love product function
   function loveProduct (){
     $('.product-love ').click(function(){
-      this.innerHTML = `<i class="fas fa-heart love"></i>`
-      console.log(this.innerHTML)
+      $(this).toggleClass('heart')
+      if($(this).hasClass('heart')){
+        this.innerHTML = `<i class="fas fa-heart love"></i>`
+      }else{
+        this.innerHTML = `<i class="far fa-heart love"></i>`
+      }
     })
   }
   loveProduct ();
@@ -154,7 +167,6 @@ function fixedCart(){
 fixedCart();
 //  end cart cartPopup
 
-//  start  form contact popup;
 
 
 //  end form contact popup;
@@ -193,34 +205,7 @@ rightSide();
 
  };
  like();
- // product quantity function 
- function quantityControl(){
-  const min = document.querySelector('#min');
-  const max = document.querySelector('#max');
-  const quantityValue = document.querySelector('#quantity-value');
-  const disable = function(){
-
-    if(quantityValue.value ){
-      min.removeAttribute("disabled");
-    }
-    else{
-      min.setAttribute("disabled",false);
-    }
-  }
-  disable();
-
-  
-  min.addEventListener('click',()=>{
-    quantityValue.value--;
-    disable();
-  })
-
-  max.addEventListener('click',()=>{
-    quantityValue.value ++;
-    disable();
-  })
- }
-//  quantityControl()
+ 
 
  // view images function in review page 
  function reviewImg(){
@@ -235,7 +220,7 @@ rightSide();
   } )
 
  };
-
+reviewImg()
 
 //  paginaaaaaaaaaaaaation function
 function pagination(){
@@ -293,6 +278,45 @@ function service(){
 
 }
 service();
+// caaaaaaaaaaaaaaaart paaaaaaaaaaaaaaage
+// product quantity function 
+function quantityControl(){
+  const min = document.querySelector('.min');
+  const max = document.querySelector('.max');
+  const quantityValue = document.querySelector('.quantity-input');
+  const price = document.querySelector('.price')
+  const totalPrice = document.querySelector('.total-price')
+  const disable = function(){
+
+    if(quantityValue.value < 2 ){
+      min.setAttribute("disabled",false);
+    }
+    else{
+      min.removeAttribute("disabled");
+    }
+  };
+ function renewPrice(){
+   var allPrice = (price.textContent)*quantityValue.value;
+   totalPrice.textContent = allPrice;
+   console.log(totalPrice.textContent)
+   console.log(price.textContent)
+ }
+ disable();
+ renewPrice();
+  
+  min.addEventListener('click',()=>{
+    quantityValue.value--;
+    disable();
+    renewPrice();
+  })
+
+  max.addEventListener('click',()=>{
+    quantityValue.value ++;
+    disable();
+    renewPrice();
+  })
+ }
+  // quantityControl()
 
 
  

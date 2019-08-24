@@ -1807,4 +1807,7 @@ function zoomproduct(){
 	 return false;
    });
    };
-   zoomproduct();
+  
+   if (window.innerWidth > 600 ){
+     zoomproduct();
+   }

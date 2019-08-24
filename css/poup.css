@@ -1591,10 +1591,10 @@ prevew-content-quantity{
 .product-table{
   box-shadow: 1px 1px 2px 3px #ccc, -1px -1px 2px 3px #ccc;
   border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
 }
 .product-table tbody tr {
   background-color: #fff!important;
@@ -1618,10 +1618,10 @@ prevew-content-quantity{
   width: 100px;
   height: 100px;
   border-radius:20px;
-  -webkit-border-radius:20px;
-  -moz-border-radius:20px;
-  -ms-border-radius:20px;
-  -o-border-radius:20px;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
 }
 .el-total i{
   cursor: pointer;
@@ -1633,10 +1633,10 @@ prevew-content-quantity{
   background-color: #fff;
   font-size: 18px;
   border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
 }
 .cart-right .btn{
   color: #ffff;
@@ -1653,6 +1653,43 @@ prevew-content-quantity{
 }
 .charge-price{
   line-height: 5px;
+}
+.delete-order-container{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, .6);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9999999999;
+  display: none;
+}
+.delete-order{
+  text-align: center;
+  position: absolute;
+  width: 230px;
+  height: 100px;
+  background-color: #c95195;
+  color: #fff;
+  top: 50%;
+  right: 50%;
+  margin-right:-115px;
+  margin-top:-50px;
+  padding: 10px;
+  border: 1px solid#fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+} 
+.delete-order .btn{
+  background-color: #fff;
+  color: #c95195;
+  width: 70px;
+  height: 30px;
 }
 
 /* end main caaaaaaaart paaaaaaaaaage */

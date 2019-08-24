@@ -281,43 +281,71 @@ service();
 // caaaaaaaaaaaaaaaart paaaaaaaaaaaaaaage
 // product quantity function 
 function quantityControl(){
-  const min = document.querySelector('.min');
-  const max = document.querySelector('.max');
-  const quantityValue = document.querySelector('.quantity-input');
+  const min = document.querySelectorAll('.min');
+  const max = document.querySelectorAll('.max');
+  const quantityValue = document.querySelectorAll('.quantity-input');
   const price = document.querySelector('.price')
   const totalPrice = document.querySelector('.total-price')
-  const disable = function(){
 
-    if(quantityValue.value < 2 ){
-      min.setAttribute("disabled",false);
-    }
-    else{
-      min.removeAttribute("disabled");
-    }
+  const disable = function(){
+    quantityValue.forEach((input)=>{
+      if(input.value < 2 ){
+        min.setAttribute("disabled",false);
+      }
+      else{
+        min.removeAttribute("disabled");
+      }
+    })
+   
   };
  function renewPrice(){
    var allPrice = (price.textContent)*quantityValue.value;
    totalPrice.textContent = allPrice;
-   console.log(totalPrice.textContent)
-   console.log(price.textContent)
+
  }
  disable();
  renewPrice();
-  
-  min.addEventListener('click',()=>{
-    quantityValue.value--;
-    disable();
-    renewPrice();
-  })
 
-  max.addEventListener('click',()=>{
-    quantityValue.value ++;
+ min.forEach((inx)=>{
+  inx.addEventListener('click',()=>{
+    quantityValue.value--;
+    // disable();
+    renewPrice();
+  })
+ })
+ max.forEach((ma)=>{
+  ma.addEventListener('click',()=>{
+    quantityValue.value++;
     disable();
     renewPrice();
   })
+ })
+ 
  }
   // quantityControl()
 
+  function cartPopup(){
+    function deleteRow(){
+      $(".table-del").click(function(){
+        if (confirm( " هل انت متاكد") ){
+          $(this).parent().parent().parent().remove();
+        }
+      })
+     }
+    // $(".table-del").click(function(){
+    //   $(".delete-order-container").css('display' , 'block');
+    // })
+    // $('#refuse').click(function(){
+    //   $(".delete-order-container").css('display' , 'none');
+    // })
+    // $('#agree').click(function(){
+    //   $(".delete-order-container").css('display' , 'none');
+    // })
+    deleteRow();
+
+   
+  }
+  cartPopup()
 
  
 

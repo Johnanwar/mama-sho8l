@@ -324,28 +324,64 @@ function quantityControl(){
  }
   // quantityControl()
 
-  function cartPopup(){
+  // function cartPopup(){
     function deleteRow(){
       $(".table-del").click(function(){
-        if (confirm( " هل انت متاكد") ){
-          $(this).parent().parent().parent().remove();
-        }
+          var targetRow = $(this).parent().parent().parent();
+          targetRow.addClass('removerow')
+          $(".delete-order-container").css('display' , 'block');
+
+          $('#refuse').click(function(){
+              $(".delete-order-container").css('display' , 'none');
+          targetRow.removeClass('removerow');
+          })
+         $('#agree').click(function(){
+         $(".delete-order-container").css('display' , 'none');
+         if(targetRow.hasClass('removerow')){
+          targetRow.remove();
+         }
+
+         })
       })
      }
-    // $(".table-del").click(function(){
-    //   $(".delete-order-container").css('display' , 'block');
-    // })
-    // $('#refuse').click(function(){
-    //   $(".delete-order-container").css('display' , 'none');
-    // })
-    // $('#agree').click(function(){
-    //   $(".delete-order-container").css('display' , 'none');
-    // })
     deleteRow();
+// end dellllllleeeeeeeeeeeeeeete rowwwwwwww function
 
-   
-  }
-  cartPopup()
+// add quantity function
+function quantityControl(){
+  const min = document.querySelectorAll('.min');
+  const max = document.querySelectorAll('.max');
+  min.forEach((inx)=>{
+    inx.addEventListener('click',()=>{
+      var inputValue = inx.nextElementSibling;
+      inputValue.value --;
+      disable();
+    })
+   })
+   max.forEach((ma)=>{
+    ma.addEventListener('click',()=>{
+      var inputValue = ma.previousElementSibling;
+      inputValue.value ++;
+      disable()
+    })
+   })
+}
+quantityControl();
+// add quantity function
+
+// disable  min butoun function
+function disable(){
+  const inputValue = document.querySelectorAll('.quantity-input');
+  inputValue.forEach((input)=>{
+    if(input.value < 2 ){
+      input.previousElementSibling.setAttribute("disabled",false)
+    }else{
+      input.previousElementSibling.removeAttribute("disabled");
+    }
+  })
+}
+disable()
+
 
  
 

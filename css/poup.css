@@ -2233,21 +2233,21 @@ prevew-content-quantity{
     }
     .closesearch{
       font-size: 20px;
-    height: 34px;
-    width: 25px;
-    text-align: center;
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    left: 11px;
-    background-color: #880404;
-    color: #fff;
-    padding: 1px 5px;
-    display: block!important;
+      height: 38px;
+      width: 40px;
+      text-align: center;
+      cursor: pointer;
+      position: absolute;
+      top: 40px;
+      right: 36px;
+      background-color: #880404;
+      color: #fff;
+      padding: 1px 5px;
+      display: block!important;
       z-index: 99999999999999999999999999;
       display: none;
       border-radius: 50%    ;
-      -webkit-border-radius: 50%  ;
+      -webkit-border-radius: 50%    ;
       -moz-border-radius: 50%    ;
       -ms-border-radius: 50%    ;
       -o-border-radius: 50%    ;
@@ -2262,11 +2262,22 @@ prevew-content-quantity{
       display: flex;
     }
     .nav-search input{
-      width: 74%!important;
+      width: 90%!important;
       margin: auto;
+      position: absolute;
+      top: 30%;
+      right: 5%;
+      height: 60px;
+      padding-right: 55px!important;
     }
     .nav-search i {
-      right: 64px;
+      right: 38px;
+    top: 32.5%;
+    font-size: 18px;
+    background-color: #c95195;
+    color: #fff;
+    padding: 5px;
+    border-radius: 20px;
     }
   
     .big-nav-links {

@@ -134,14 +134,6 @@ function navbar(){
 };
 navbar()
   // end nav barr function in small screens
-//  search function in nav baaaaaaaaaaaaar
-function searchNav(){
-  $('.search-small').click(function(){
-    $('.nav-search').toggleClass('showserch');
-    $('.closesearch').toggleClass('showserch');
-  })
-}
-searchNav();
 
 //  start cart cartPopup
 function fixedCart(){
@@ -420,3 +412,25 @@ function cartNotifi() {
 
 }
 cartNotifi();
+
+
+//  search function in nav baaaaaaaaaaaaar
+
+
+
+// search function
+function search(){
+  $('.search-small').click(function(){
+    $('.nav-search').fadeIn();
+  })
+  $(".nav-search").click(function(){
+    $(this).fadeOut();
+  })
+  $(".closesearch").click(function(){
+    $(".nav-search").fadeOut();
+  })
+  $(".nav-search .form-control").click(function(e){
+    e.stopPropagation();
+  })
+}
+search()

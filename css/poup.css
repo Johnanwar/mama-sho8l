@@ -520,17 +520,38 @@ a:hover {
   /* end naaaaaaaaaaaaav baaaaaaaaaaaaaaar  */
 
 /* start service */
-#services{
-  background-color: #f7f7f7;
+
+
+.service-img img{
+  width: 35%;
+  margin-bottom: 5px;
+  }
+.service-img{  
+  border-bottom: .5px solid #eee;
+  height: 100px;
 }
-.service-part{
-  box-shadow: 1px 2px 2px #ccc, -1px -2px 2px #ccc;
-  padding: 10px;
-  background-color: #fff;
+.service-card{
+  border: .5px solid #eee;
   border-radius: 5px;
-  position: relative;
+  padding: 10px;
+  height: 100%;;
 }
-/*  */
+.service-card h4{
+  text-align: center;
+  margin-top: 10px;
+}
+.service-card h4 a{
+  color: #6b6464;
+  font-family: serif;
+  font-weight: bold;
+}
+.service-text li{
+      font-family: 'Amiri', serif;
+}
+ .service-text a{
+      color: #64266c
+}
+
 
 .service-part .servise-btn{
   color: #ffffff;
@@ -595,15 +616,16 @@ a:hover {
   margin: auto;
   border: 1px solid #64266c;
 }
-.service-content img{
-  width: 100%;
-  height: 250px;
-}
-
-
-
 
 /* servicesssssssssssssssssssssssssssss */
+/************** add panner ************/
+.add-panner img{
+  max-height: 380px;
+  width: 100%;
+}
+
+/* ..................................... */
+
 
 .feature-img{
   width: 100%;
@@ -698,9 +720,7 @@ border-bottom: 26px solid #c95195;
  /* end product section */
 
  /* start articles section */
- #article{
-   background-color: #f7f7f7
- }
+
  #article .all-card , .all-card{
    background-color: #fff;
    color: #c95195;
@@ -2417,12 +2437,28 @@ display: none;
     .preview-images{
       overflow: hidden;
     }
-    .service-part::before {
-      top: -59px;
-      width: 40%;
-      right: 30%;
-
-    }
+   .service-text{
+     display: none;
+   }
+   .service-card h4{
+     font-weight: normal;
+    font-size: 12px;
+    margin-top: 0px;
+   }
+   .service-img img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+.service-img {
+    border-bottom: none;
+    height: 54px;
+}
+.service-card{
+  border: none;
+}
+#services .row{
+  padding-top: 0px!important;
+}
    
   }
   @media screen and (max-width: 568px) {

@@ -65,7 +65,7 @@ function loginPoup() {
     e.stopPropagation();
   })
 }
-loginPoup()
+// loginPoup()
 // show password function
 function showPass() {
   const input = document.querySelectorAll(".pass-container input");

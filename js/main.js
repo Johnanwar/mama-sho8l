@@ -389,7 +389,21 @@ function cartNotifi() {
 cartNotifi();
 
 
-//  search function in nav baaaaaaaaaaaaar
+
+
+//  cart poup
+function cartPoup(){
+  $(".addToCart" +"," + ".addtocart-preview").click(function (e) {
+    $(".cart-poup").fadeIn()
+  })  
+  $(".cart-poup").click(function (e) {
+    $(this).fadeOut()
+  })
+  $(".continueShopping").click(function (e) {
+    $(".cart-poup").fadeOut()
+  })
+}
+cartPoup()
 
 
 

@@ -42,6 +42,10 @@
 }
 .swiper-pagination-bullet-active {
   background: #64266c;
+  border: 1px solid #ccc;
+  padding: 4px;
+  border-radius: 0;
+  transform: rotate(45deg);
 }
 .swiper-slide{
   position: relative;
@@ -84,3 +88,10 @@
   color: #fff!important;
   border: .5px solid #fff;
 }
+
+/* .swiper-pagination-bullet-active{
+  border: 1px solid #ccc;
+  padding: 4px;
+  border-radius: 0;
+  transform: rotate(45deg);
+} */

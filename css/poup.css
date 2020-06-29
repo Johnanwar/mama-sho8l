@@ -1124,13 +1124,7 @@ border-bottom: 26px solid #c95195;
   -ms-border-radius:;
   -o-border-radius:;
 }
-.right-side-header .d-flex:hover{
-  transform: skew(20deg);
-  -webkit-transform:;
-  -moz-transform:;
-  -ms-transform:;
-  -o-transform:;
-}
+
 .right-side-header h5{
   font-size: 24px;
 }
@@ -1151,16 +1145,25 @@ border-bottom: 26px solid #c95195;
 .right-side-header li:hover {
   color: #c65496
 }
-.article-content{
+/* .article-content{
   border: 1px solid #ccc;
   box-shadow: 2px 2px 2px #ccc ,-2px -2px 2px #ccc;
   padding: 10px;
   background-color: #fff;
+} */
+.card-content h2{
+  color: #c95195;
+  font-size: 32px;
+  font-weight: bold;
 }
-
 .article-content img{
   width: 100%;
-  height: 300px;
+  max-height: 400px;
+}
+.articl-conaineer{
+  position: relative;
+    margin-top: -98px;
+    background-color: #fff;
 }
 .articl-fullpage a:hover{
   color: #c95195;
@@ -1180,13 +1183,7 @@ border-bottom: 26px solid #c95195;
   -ms-transition: all 1s;
   -o-transition: all 1s;
 }
-.articl-fullpage i:hover{
-  transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-}
+
 .article-share .social-btn-list i , .article-like i{
   font-size: 16px;
   padding: 10px;

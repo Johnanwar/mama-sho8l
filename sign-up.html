@@ -16,102 +16,58 @@
 <body>
 
     <!-- staaaaaaaaaaaaaart naaaaaaaaaaaaav baaaaaaaaaaaaaar -->
-    <nav class=" big-nav ">
-      <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-
-      <div class="container-fluid pt-2">
-        <div class="row">
-          <div class="col-md-4 pt-md-1">
-         <div class=" row">
-            <div class="col-md-4">
-              <div class="nav-logo ">
-                <a href="index.html"><img class="logo trans img-responsive" src="./images/logo.png" alt=" logo"></a>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="nav-search pt-3">
-                <input type="search" class="form-control" placeholder="ابحثي هنا ">
-                <a class="" href=""><i class="fas fa-search"></i></a>
-                <span class="closesearch"> x </span>
-
-              </div>
-            </div>
-          </div>
-
-
-
-        </div>
-        <div class="col-md-8 ">
-          <div class="row ">
-            <div class="col-md-6">
-              <ul class=" big-nav-links pt-3">
-                <li><a class="trans" href="index.html">الرئيسيه </a></li>
-                <li class="product-nav"><a href="product.html" class="trans"> منتجاتنا </a> </li>
-
-                <li class="article-nav">
-                  <a class="trans"> مقالات <i class="fas fa-chevron-down"></i> </a>
-                  <div class="article-nav-child trans row">
-                    <div class="col-md-6 mum-article">
-                      <p> <a class="trans" href="mama f elbet.html"> <i class="fas mr-3 fa-home"></i> ماما في البيت </a>
-                      </p>
-                      <p> <a class="trans" href="mama f elmatb5.html"> <i class="fas mr-3 fa-utensils"></i> ماما في
-                          المطبخ </a> </p>
-                      <p> <a class="trans" href="mama f elsho8l.html"> <i class="fas mr-3 fa-briefcase"></i> ماما في
-                          الشغل </a></p>
-
-                      <a class="trans" href="mama w elawlad.html"> <i class="fas mr-3 fa-users"></i> ماما و الاولاد </a>
-                      </a>
-                    </div>
-                    <div class="col-md-6 d-none d-md-inline-block">
-                      <img src="./images/new girl shot.png" alt="" class="img-fluid mt-4">
-                    </div>
-                  </div>
-                </li>
-
-
-                <li><a class="trans" href="news.html"> اخبارنا </a></li>
-                <li class="d-block d-md-none"><a class="trans" href=""> تسجيل الدخول </a></li>
-                <li class="d-block d-md-none"><a class="trans" href=""> حساب جديد </a></li>
-              </ul>
-            </div>
-            <div class="col-md-6 pt-2">
-              <ul class="big-nav-links-icons list-unstyled pt-2">
-                <li class="profile-parent"><a href="profile.html"><img class="profile img-responsive"
-                      src="./images/face.jpg" alt=" profile"></a></li>
-                <li class="search-small">
-
-                  <a><i class="fas fa-search"></i></a>
-                </li>
-
-                <li class="notfication-nav"><a> <i style="font-size: 25px ; color: #59c6c9;"
-                      class=" trans fas fa-bell"></i> </a>
-                  <span id="notfication-notfi"> 0 </span>
-                  <div class="notfication-nav-child trans">
-                    <a class="trans" href="#"> تم اضافه مقاله جديده تنني بتتتبنن بتبتبمبمب </a>
-                    <a class="trans" href="#"> تم اضافه مقاله جديده تنني بتتتبنن بتبتبمبمب </a>
-                    <a class="trans" href="#"> تم اضافه مقاله جديده تنني بتتتبنن بتبتبمبمب </a>
-                  </div>
-                </li>
-
-                <li id="nav-cart" class="cart-header ">
-                  <a id="big-cart" href="cart.html" <i class="fas trans fa-shopping-cart"></i> </a>
-                  <span id="cart-notfi"> 0 </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!--               
-        <div class="col-md-4">
+    <nav class="main-nav">
+      <div class="d-flex justify-content-between nav-top py-2">
+        <div class="nav-shortcuts">
        
-        </div> -->
+          <ul class="list-unstyled d-flex mb-0">
+            <li class="px-2"> <a href=""> <i class="far fa-heart love main-color"></i> المفضله  </a>  </li>
+            <li class="px-2"> <a href="cart.html"> <i class="fas fa-shopping-cart main-color"></i>  العربه </a> </li>
+          </ul>
+        </div>
+        <div class="nav-login">
+          
+         <ul class="list-unstyled d-flex mb-0">
+           <li class="px-2"> <a href="login.html"> <i class="fas fa-user-alt main-color"></i> تسجبل الدخول</a> </li>
+           <li class="px-2">   <a href="sign-up.html"><i class="fas fa-user-lock main-color"></i> حساب جديد</a> </li>
+         </ul>
+         
+        </div>
       </div>
-  </div>
-  </nav>
+      <div class="d-flex justify-content-between py-2 align-items-center nav-middle">
+       <div class="nav-log">
+      
+         <a href="index.html"> <img class="logo trans img-responsive" src="./images/logo.png" alt=" logo"></a>
+       </div>
+  
+       <div class="nav-search">
+         <form action="" class="form-groun d-flex">
+           <input type="search" class="form-control" placeholder="ابحثي هنا "> 
+           <button class="btn btn btn-Link">بحث</button>      
+          </form>
+          <ul class="list-unstyled d-flex my-2 justify-content-between w-50 navbar-links">
+            <li> <a href="index.html"> <i class="fas fa-home main-color"></i> الرئيسيه</a> </li>
+            <li> <a href="product.html"> <i class="fas fa-clipboard main-color"></i> منتجاتنا </a> </li>
+            <li class="mum-article-parent"> <a href=""> <i class="fas fa-newspaper main-color"></i>  مقالات  <i class="fas fa-chevron-down"></i> </a>
+             <div class=" mum-article">
+               <p> <a class="trans" href="mama f elbet.html"> <i class="fas mr-3 fa-home main-color"></i> ماما في البيت </a>
+               </p>
+               <p> <a class="trans" href="mama f elmatb5.html"> <i class="fas mr-3 fa-utensils main-color"></i> ماما في المطبخ
+                 </a> </p>
+               <p> <a class="trans" href="mama f elsho8l.html"> <i class="fas mr-3 fa-briefcase main-color"></i> ماما في الشغل
+                 </a></p>
+  
+               <a class="trans" href="mama w elawlad.html"> <i class="fas mr-3 fa-users main-color"></i> ماما و الاولاد </a>
+               
+             </div>
+  
+           
+           </li>
+            <li> <a href=""> <i class="far fa-newspaper main-color"></i> اخبارنا </a> </li>
+          </ul>
+       </div>
+     </div>
+    </nav>
   <!--eeeeeeeeeend naaaaaaaaaaaaav baaaaaaaaaaaaaar -->
  <!-- staaaaaaaaaartform -->
 <section class="sign-up">

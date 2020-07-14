@@ -93,22 +93,7 @@ function showPass() {
 }
 showPass()
 
-//start nav barr function in small screens
 
-function navbar() {
-  const hamburger = document.querySelector(".hamburger");
-  const navLinks = document.querySelector(".big-nav-links");
-  const links = document.querySelectorAll(".big-nav-links li");
-
-  hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("open");
-    links.forEach(link => {
-      link.classList.toggle("fade");
-    });
-  });
-};
-navbar()
-// end nav barr function in small screens
 
 //  start cart cartPopup
 function fixedCart() {
@@ -407,19 +392,14 @@ cartPoup()
 
 
 
-// search function
-function search() {
-  $('.search-small').click(function () {
-    $('.nav-search').fadeIn();
+
+
+function mobileNav(){
+  $("#togglmenu").click(function(){
+    $(".mobile-nav-content").css("right", "0");
   })
-  $(".nav-search").click(function () {
-    $(this).fadeOut();
-  })
-  $(".closesearch").click(function () {
-    $(".nav-search").fadeOut();
-  })
-  $(".nav-search .form-control").click(function (e) {
-    e.stopPropagation();
+  $("#closemenu").click(function(){
+    $(".mobile-nav-content").css("right", "-1000px");
   })
 }
-search()
+mobileNav()

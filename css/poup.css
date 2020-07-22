@@ -300,6 +300,10 @@ a:hover {
     font-weight: bold;
     transition: .7s !important;
 }
+span.cart-amount {
+    font-size: 15px!important;
+    color: #5bc5c8;
+}
 .main-nav a:hover{
   text-decoration: underline;
 }
@@ -378,13 +382,34 @@ a:hover {
 .mobile-nav{
   display: none;
 }
+
   
     
   /* end naaaaaaaaaaaaav baaaaaaaaaaaaaaar  */
 
+
 /* start service */
-
-
+.checkout-form {
+  font-family: 'Amiri', serif;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 18px;
+  border-radius: 10px;
+}
+.checkout .cart-right {
+  height: 100%;
+}
+.checkout-form input, .checkout-form select  ,.checkout-form textarea  {
+  border: 1px solid #ccc;
+}
+.checkout-form input:focus, .checkout-form select:focus  ,.checkout-form textarea:focus  {
+  border-color: #c95195;
+}
+.checkout-form .btn{
+  background-color: #c95195;
+  /* color: #e5e5e5; */
+  color: #fff;
+}
 .service-img img{
   width: 35%;
   margin-bottom: 5px;

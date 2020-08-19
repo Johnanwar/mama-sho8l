@@ -842,7 +842,9 @@ border-bottom: 26px solid #c95195;
 	color: #64266c;
 	background-color: #fff
 }
-
+.testadd {
+  text-decoration:underline!important ;
+ }
 /* end fooooooter */
 
 /* fixed cart menu */
@@ -1576,6 +1578,12 @@ prevew-content-quantity{
 .product-table{
   /* box-shadow: 1px 1px 2px 4px #eee, -1px -1px 10px 10px #eee; */
     border-radius: 10px;
+}
+.product-table td {
+  vertical-align: middle;
+}
+ .el-name .d-flex{
+  align-items: center;
 }
 .product-table table{
   border: 1px solid #eee;
